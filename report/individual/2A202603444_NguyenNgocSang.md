@@ -2,15 +2,15 @@
 
 ## Dữ liệu và benchmark
 
-- **Nguồn:** OpenStax, *Introduction to Computer Science*. PDF gốc nằm trong thư mục `data/corpus/` của repo Day 6 (`$DAY6_ROOT`), không được copy vào repo Day 7. PDF có 939 trang; trang bản quyền ghi Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Phiên bản/ấn bản không được lưu trong artifacts; cần ghi lại khi chốt nguồn nộp.
-- **Phạm vi index:** PostgreSQL 16 + pgvector 0.8.7 chạy local theo Docker Compose Day 6. Database hiện có 251 chunks cho strategy A và 317 chunks cho mỗi strategy B/C (paragraph, tối đa 500 ký tự). Các benchmark trong báo cáo chỉ dùng A: fixed-size 500 ký tự, overlap 50 ký tự, trên 34 giá trị trang nguồn (19–60). Vì vậy đây chưa phải index toàn bộ PDF 939 trang.
+- **Nguồn:** OpenStax, *Introduction to Computer Science*.
+- **Phạm vi index:** PostgreSQL 16 + pgvector 0.8.7 chạy local theo Docker Compose Day 6. Database hiện có 251 chunks cho strategy A và 317 chunks cho mỗi strategy B/C. Các benchmark trong báo cáo chỉ dùng A: fixed-size 500 ký tự, overlap 50 ký tự, trên 34 giá trị trang nguồn (19–60).
 - **Dense embedding:** `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, 384 chiều; embedding được normalize và truy vấn pgvector bằng cosine distance. Không có version/hash của model được lưu. TF-IDF dùng lowercase, unigram/bigram, English stop words và cosine similarity.
-- **Agent:** OpenRouter, model `openai/gpt-4o-mini` (theo lần chạy demo thành công); không ghi API key vào báo cáo. Hybrid dùng Reciprocal Rank Fusion (RRF), `rrf_k=60`, lấy tối đa 20 ứng viên từ mỗi retriever rồi trả top-3. Không có reranker riêng.
-- **Benchmark retrieval:** [questions.json](../../benchmark/questions.json) có 20 câu có gold evidence: 15 dev và 5 test. Bốn câu có filter: q03/q09 dùng `chapter_1` ở dev; q17/q19 dùng `chapter_2` ở test. Evaluator đã được sửa để đọc trường `filter` đơn trong benchmark (trước đó chỉ đọc `filters`/`metadata_filter`), rồi chạy lại các kết quả trong báo cáo.
+- **Agent:** OpenRouter, model `openai/gpt-4o-mini`. Hybrid dùng Reciprocal Rank Fusion (RRF), `rrf_k=60`, lấy tối đa 20 ứng viên từ mỗi retriever rồi trả top-3. Không có reranker riêng.
+- **Benchmark retrieval:** [questions.json](../../benchmark/questions.json) có 20 câu có gold evidence: 15 dev và 5 test. Bốn câu có filter: q03/q09 dùng `chapter_1` ở dev; q17/q19 dùng `chapter_2` ở test. Evaluator đã được sửa để đọc trường `filter` đơn trong benchmark.
 - **Benchmark agent:** [agent_cases.json](../../benchmark/agent_cases.json) có 24 câu: dev 17 (15 answerable, 2 unanswerable), test 7 (5 answerable, 2 unanswerable). Agent được kỳ vọng trả lời câu có evidence và abstain khi thiếu evidence.
 - **Tiêu chí retrieval:** so khớp toàn bộ `evidence_quote` sau khi chuẩn hóa whitespace, đồng thời yêu cầu đúng `source_id` và trang. `Hit@1` là evidence ở hạng 1; `Evidence Hit@3` là có evidence ở top-3; `Context Evidence Rate` là evidence có mặt trong context gửi cho agent.
-- **Review agent:** Đã đối chiếu câu trả lời với citation chunk cho từng trace và chấm theo [rubric benchmark](../../BENCHMARK.md). Các file review và metric được lưu cùng trace. Đây là evidence audit trong lần làm báo cáo, không phải đánh giá độc lập/blind. Các câu unanswerable đã được rà soát trên text toàn PDF; riêng u03/u04 không có số liệu điện của máy tác giả hoặc email cá nhân của Ada Lovelace.
-- **Giới hạn đo lường:** Test retrieval và test agent đã chạy. Trace không lưu token hoặc chi phí OpenRouter, vì vậy chi phí là **không được ghi nhận**, không phải 0. Chỉ số agent phản ánh những lần chạy đã lưu; model/API có thể không deterministic.
+- **Review agent:** Đã đối chiếu câu trả lời với citation chunk cho từng trace. Các file review và metric được lưu cùng trace. Đây là evidence audit trong lần làm báo cáo, không phải đánh giá độc lập/blind. Các câu unanswerable đã được rà soát trên text toàn PDF; riêng u03/u04 không có số liệu điện của máy tác giả hoặc email cá nhân của Ada Lovelace.
+- **Giới hạn đo lường:** Test retrieval và test agent đã chạy.
 
 ## Retrieval và thử nghiệm
 
@@ -25,7 +25,7 @@
 | Dense | Strategy A; MiniLM + pgvector cosine; top-3; budget 800 | test, n=5 | 3/5 (60.0%) | 3/5 (60.0%) | 3/5 (60.0%) | 165.65 ms/query |
 | Cấu hình Hybrid đã chạy | RRF k=60; top-3; budget 800 | test, n=5 | 3/5 (60.0%) | 3/5 (60.0%) | 3/5 (60.0%) | 205.74 ms/query |
 
-Filter được truyền cho mọi retriever theo benchmark: q03/q09 dùng `chapter_1` ở dev; q17/q19 dùng `chapter_2` ở test; các câu còn lại không lọc. Latency là thời gian retrieval và đóng gói context trong evaluator, không gồm khởi tạo model/embedding hoặc lượt gọi LLM. Budget 800 là mặc định của evaluator và cũng là budget của các lần agent test. Dịch vụ/API cost không được lưu. Các con số giữa lần chạy có thể dao động; không diễn giải chênh lệch latency nhỏ như cải thiện ổn định.
+Filter được truyền cho mọi retriever theo benchmark: q03/q09 dùng `chapter_1` ở dev; q17/q19 dùng `chapter_2` ở test; các câu còn lại không lọc. Latency là thời gian retrieval và đóng gói context trong evaluator, không gồm khởi tạo model/embedding hoặc lượt gọi LLM. Budget 800 là mặc định của evaluator và cũng là budget của các lần agent test. Các con số giữa lần chạy có thể dao động; không diễn giải chênh lệch latency nhỏ như cải thiện ổn định.
 
 **Lỗi dev và phân tích**
 
@@ -39,7 +39,7 @@ Artifacts: [TF-IDF dev](../retrieval/tfidf_dev.json), [Dense dev](../retrieval/d
 ## Agent và đánh giá
 
 - **Luồng:** một search tool dùng Hybrid RRF; top-3 mỗi lượt, tối đa 4 search, context budget 800 ký tự. Context expansion tìm overlap từ 25 ký tự trở lên giữa chunks cùng nguồn/trang và lấy cửa sổ quanh điểm nối (tối đa khoảng 250 ký tự mỗi phía). Agent chỉ giữ context trong budget.
-- **Dừng và citation:** dừng khi model trả answer; blank answer/citations, citation ID không có trong context hoặc thiếu `[chunk-id]` trong answer dẫn tới abstain; đạt giới hạn search cũng abstain. Kiểm tra này chỉ xác nhận citation ID/format, không xác nhận evidence có hỗ trợ nội dung. Lỗi API/retriever cần được báo riêng, không dùng kết quả giả.
+- **Dừng và citation:** dừng khi model trả answer; blank answer/citations, citation ID không có trong context hoặc thiếu `[chunk-id]` trong answer dẫn tới abstain; đạt giới hạn search cũng abstain. Kiểm tra này chỉ xác nhận citation ID/format, không xác nhận evidence có hỗ trợ nội dung.
 
 | Cấu hình / split | Tool use | Search calls | Grounded answer (0/1/2; mean /2) | Citation support | Answer có citation | Abstention đúng; từ chối nhầm |
 |---|---:|---:|---|---|---:|---|
@@ -48,7 +48,7 @@ Artifacts: [TF-IDF dev](../retrieval/tfidf_dev.json), [Dense dev](../retrieval/d
 | Baseline TF-IDF, test | 7/7 | 14 tổng; 2.00/query | 2/1/2; 1.00 | 3/3 | 3/3 | 2/2; 2/5 |
 | Hybrid, test | 7/7 | 14 tổng; 2.00/query | 2/0/3; 1.20 | 3/3 | 3/3 | 2/2; 2/5 |
 
-Citation support là review ngữ nghĩa của passage, không phải chỉ kiểm tra ID/format. Mọi lần chạy có 0 provider error. Wall-clock trung bình: Hybrid dev trước 2.811 giây/query (median 2.419), sau 2.815 (median 2.575), TF-IDF test 3.250 và Hybrid test 3.399 giây/query. Token/API cost không được lưu. Sau expansion, câu answerable có trạng thái answered giảm 13/15 xuống 11/15; q08/q10/q13 chuyển từ answered sang abstain, q14 từ abstain sang answered; q06 chạm search limit sau 4 lượt. Chất lượng grounded cũng giảm trong các trace này: citation support từ 13/13 xuống 7/11, chủ yếu do q04/q05/q09/q12 có citation không hỗ trợ phần cốt lõi của answer. Đây là đánh giá các trace đã lưu, không khẳng định nhân quả; model/API có thể không deterministic.
+Citation support là review ngữ nghĩa của passage, không phải chỉ kiểm tra ID/format. Mọi lần chạy có 0 provider error. Wall-clock trung bình: Hybrid dev trước 2.811 giây/query (median 2.419), sau 2.815 (median 2.575), TF-IDF test 3.250 và Hybrid test 3.399 giây/query. Token/API cost không được lưu. Sau expansion, câu answerable có trạng thái answered giảm 13/15 xuống 11/15; q08/q10/q13 chuyển từ answered sang abstain, q14 từ abstain sang answered; q06 chạm search limit sau 4 lượt. Chất lượng grounded cũng giảm trong các trace này: citation support từ 13/13 xuống 7/11, chủ yếu do q04/q05/q09/q12 có citation không hỗ trợ phần cốt lõi của answer.
 
 **Trace từng câu sau context expansion** (answer đầy đủ trong [hybrid_dev_after.json](../agent/hybrid_dev_after.json); review chi tiết tại [hybrid_dev_after_reviews.json](../agent/hybrid_dev_after_reviews.json)):
 
