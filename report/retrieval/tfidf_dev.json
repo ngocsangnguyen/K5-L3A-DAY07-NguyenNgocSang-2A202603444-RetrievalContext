@@ -1,0 +1,906 @@
+{
+  "summary": {
+    "strategy": "tfidf",
+    "chunk_strategy": "A",
+    "split": "dev",
+    "n": 15,
+    "hit1": 9,
+    "hit3": 10,
+    "context_hit": 9,
+    "hit1_rate": 0.6,
+    "hit3_rate": 0.6666666666666666,
+    "context_hit_rate": 0.6,
+    "avg_latency_ms": 3.3741599997786884
+  },
+  "traces": [
+    {
+      "query_id": "q01",
+      "question": "What does computer science study?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "fd592aae47e60aaf9834d401",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 22,
+          "text": "d University’s computer science department, Forsythe defined computer science as “the theory of\nprogramming, numerical analysis, data processing, and the design of computer systems.” He also argued that\ncomputer science was distinguished from other disciplines by the emphasis on algorithms, which are essential\nfor effective computer programming.3\n\nComputer science is not only about the study of how computers work, but also everything surrounding\ncomputers, including the people who design compute",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2512553389710397,
+          "hit": false
+        },
+        {
+          "id": "0af9af6337441cc7bcc239ae",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 34,
+          "text": "we’ve also raised questions about what computer science is\ntoday. If computer science is the study of all “phenomena surrounding computers,” it could also involve data\nscience, computational science, bioinformatics, cheminformatics, computational social science, medical\ninformatics, and information science. As you will learn in Chapter 13 Hybrid Multicloud Digital Solutions\nDevelopment, another aspect of computer science is responsible computing, which includes the appropriate\nmanagement of cybe",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.23356134268633824,
+          "hit": false
+        },
+        {
+          "id": "0e75b12d521320ecc371f7a6",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 32,
+          "text": "r conditioning\nand power demands so that they efficiently serve the people living, working, and playing within them.\n\nAlthough computer science has been used to support scientific discovery, the theory of knowledge of\ncomputer science has historically been considered quite different from that of the natural sciences, such as\nbiology, physics, and chemistry. Computer science does not study natural objects, so to most, it would not be\nconsidered a natural science but rather an applied science. Unl",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.1923957686643218,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "fd592aae47e60aaf9834d401"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 6.834399999206653
+    },
+    {
+      "query_id": "q02",
+      "question": "What is an algorithm in computer science?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "36c97e25d46749b8e65c9078",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "y the end of this section, you will be able to:\n• Discuss the history that led to the creation of computer science as a field\n• Define computer science\n• Assess what computer science can do, as well as what it should not do\n\nThe field of computer science (CS) is the study of computing, which includes all phenomena related to\ncomputers, such as the Internet. With foundations in engineering and mathematics, computer science focuses\non studying algorithms. An algorithm is a sequence of precise inst",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.32170053860493614,
+          "hit": false
+        },
+        {
+          "id": "8600a6d26a90755e2b914d8e",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "ct with items made possible by computer science. Computer science is\na challenging field, and the outputs of computer science offer many benefits for society. At the same time, we\nhave to be cautious about how we use computer science to ensure it impacts society in ethical ways. To help\nyou understand this, the next section will explain how computer science came to be and discuss the field’s\npotential.\n\n1.1 Computer Science\n\nLearning Objectives\nBy the end of this section, you will be able to:\n• ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.306063311313694,
+          "hit": false
+        },
+        {
+          "id": "c5de90b34c9f4b861e0b9aa7",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 19,
+          "text": "1\nIntroduction to Computer Science\n\nFigure 1.1 Computing is everywhere, affecting everyone, for better and for worse. (credit: modification of \"Whereas design is\nexpansive, engineering is narrowing\" by Jessie Huynh/Critically Conscious Computing, CC0)\n\nChapter Outline\n1.1 Computer Science\n1.2 Computer Science across the Disciplines\n1.3 Computer Science and the Future of Society\n\nIntroduction\nThis textbook will introduce you to the exciting and complex world of computer science. In this chapter, ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2633480977697036,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "36c97e25d46749b8e65c9078"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 3.0769999993935926
+    },
+    {
+      "query_id": "q03",
+      "question": "How does binary search narrow its search interval?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": {
+        "chapter": "chapter_1"
+      },
+      "results": [
+        {
+          "id": "a7ccbfbb6e54f96c9c61b6f8",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "nd produce outputs used in computing. Today’s computers still rely on the same foundations of\nnumbers, calculations, and algorithms, except at the scale of billions of numbers and billions of calculations\nper second.\n\nTo introduce a concrete example of an algorithm, let us consider binary search algorithm, which is used to\nlocate a number in a sorted array of integers efficiently. The algorithm operates by repeatedly dividing the\nsearch interval in half to perform the search. If the number being",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.331665756303674,
+          "hit": false
+        },
+        {
+          "id": "5d26da0ca3b0e80e539ebe0c",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "in half to perform the search. If the number being searched is less than the integer in the\nmiddle of the interval, the interval is narrowed to the lower half. In the alternative, the interval is narrowed to\nthe upper half. The algorithm repeatedly checks until the number is found or the interval is empty.\n\nAccess for free at openstax.org",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.23164671527443198,
+          "hit": false
+        },
+        {
+          "id": "e84ff6fc3330e49b50b2fdf3",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 36,
+          "text": "26 1 • Introduction to Computer Science\n\nAs noted earlier, computer science is a powerful tool, and computer scientists have vast technological\nknowledge that continues transforming society. Computer scientists have an obligation to be ethical and good\nstewards of technology with an emphasis on responsible computing. Written code influences daily life, from\nwhat we see on social media to the news stories that pop up in a Google search and even who may or may not\nreceive a job interview. When com",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.06506359989574398,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "a7ccbfbb6e54f96c9c61b6f8"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 2.814600000419887
+    },
+    {
+      "query_id": "q04",
+      "question": "Who developed logarithms in 1614?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "499a678acb8ab6279262aaa5",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 21,
+          "text": "tors. (credit: “Traditional Chinese abacus illustrating the suspended bead use” by\nJccsvq/Wikimedia Commons, CC0)\n\nThe next major development in the evolution of computing occurred in 1614 when John Napier, a Scottish\nmathematician, developed logarithms, which express exponents by denoting the power that a number must\nbe raised to obtain another value. Logarithms provided a shortcut for making tedious calculations and became\nthe foundation for multiple analog calculating machines invented during",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2712404958563808,
+          "hit": true
+        },
+        {
+          "id": "832db2aaf0504db3ebf5fb62",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "rithms. An algorithm is a sequence of precise instructions that enables computing. This\nincludes components computers use to process information. By studying and applying algorithms, computer\nscience creates applications and solutions that impact all areas of society. For example, computer science\ndeveloped the programs that enable online shopping, texting with friends, streaming music, and other\ntechnological processes.\n\nWhile computers are common today, they weren’t always this pervasive. For ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.0372257889982985,
+          "hit": false
+        },
+        {
+          "id": "8a0269ac6308a8a16be0a273",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 60,
+          "text": " outcome, such as the\npositioning of key pieces and the opponent’s tendencies, sidelining less critical factors—this is an\nabstraction.\n• Drawing from prior knowledge and experiences in similar scenarios, a step-by-step approach is\ndeveloped to navigate through the game—this is algorithmic thinking.\n\nShould you venture into developing your own chess program or strategy, these are precisely the types of\nconsiderations you would deliberate on and resolve before actual programming.\n\nTesting and Deb",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.036540798815989296,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "499a678acb8ab6279262aaa5"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 3.973700000642566
+    },
+    {
+      "query_id": "q05",
+      "question": "Why was the Difference Engine invented?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "f5182b056c49250db037b797",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 21,
+          "text": "ltiple analog calculating machines invented during the 1600s.\n\nScientists continued to explore different ways to speed up or automate calculations. In the 1820s, English\nmathematician Charles Babbage invented the Difference Engine with the goal of preventing human errors in\nmanual calculations. The Difference Engine provided a means to automate the calculations of polynomial\nfunctions and astronomical calculations.\n\nBabbage followed the Difference Engine with his invention of the Analytical Engi",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.49957006656701525,
+          "hit": true
+        },
+        {
+          "id": "f0ae94b3dd32215d582a4cfe",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 21,
+          "text": "e Engine with his invention of the Analytical Engine. With assistance from Ada\nLovelace, the Analytical Engine was program-controlled and included features like an integrated memory and\nan arithmetic logic unit. Lovelace used punched cards to create sequencing instructions that could be read by\nthe Analytical Engine to automatically perform any calculation included in the programming code. With her\nwork on the Analytical Engine, Lovelace became the world’s first computer programmer.\n\nThe next ma",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.21477875651937467,
+          "hit": false
+        },
+        {
+          "id": "abfc27842ba832c6da7b2f03",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 24,
+          "text": "which considers how computers in general—not just the ENIAC or today’s computers, but even\ntomorrow’s computers that we haven’t yet invented—can solve problems. This theoretical perspective expands\ncomputer science knowledge by contributing ideas about (1) whether a problem can be computed by a Turing-\ncomplete computer at all, (2) how that problem might be computed using an algorithm, and (3) how quickly or\nefficiently a computer can run such an algorithm. The answers to these questions suggest",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.043110809836126765,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "f5182b056c49250db037b797"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 2.8744999999616994
+    },
+    {
+      "query_id": "q06",
+      "question": "Who is described as the first computer programmer?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "a6e5def8298f801b2c46a373",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 21,
+          "text": "he world’s first computer programmer.\n\nThe next major development in computing occurred in the late 1800s when Herman Hollerith, an employee of\nthe U.S. Census Office, developed a machine that could punch cards and count them. In 1890, Hollerith’s\ninvention was used to tabulate and prepare statistics for the U.S. census.\n\nBy the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and\nrelated machines became more commonplace, setting the stage for the inv",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.13862959030554536,
+          "hit": false
+        },
+        {
+          "id": "b46f3abf3d881963265336d6",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 53,
+          "text": "under CC BY NC-SA 4.0 license)\n\nIn addition to the four techniques, computational thinking involves essential steps such as testing and\ndebugging. Testing is crucial for uncovering errors within the step-by-step instructions or algorithms\nemployed to tackle a problem. On the other hand, debugging entails identifying and rectifying issues within\nthe code.\n\nA programmer is someone who writes instructions for a computer to follow. A typical example is that of a\nprogrammer who gives instructions to ",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.12345012349874801,
+          "hit": false
+        },
+        {
+          "id": "f0ae94b3dd32215d582a4cfe",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 21,
+          "text": "e Engine with his invention of the Analytical Engine. With assistance from Ada\nLovelace, the Analytical Engine was program-controlled and included features like an integrated memory and\nan arithmetic logic unit. Lovelace used punched cards to create sequencing instructions that could be read by\nthe Analytical Engine to automatically perform any calculation included in the programming code. With her\nwork on the Analytical Engine, Lovelace became the world’s first computer programmer.\n\nThe next ma",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.11445278585503159,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "a6e5def8298f801b2c46a373"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 2.7032999987568473
+    },
+    {
+      "query_id": "q07",
+      "question": "Who invented dynamic programming in 1953?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "32a272fb9241ae25e99e9c57",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 22,
+          "text": "12 1 • Introduction to Computer Science\n\nRichard Bellman was a significant contributor to this effort. A mathematics professor at Princeton and later at\nStanford in the 1940s, Bellman later went to work for the Rand Corporation, where he studied the theory of\nmultistage decision processes. In 1953, Bellman invented dynamic programming,1 which is a mathematical\noptimization methodology and a technique for computer programming. With dynamic programming, complex\nproblems are divided into more manag",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.3596208912616172,
+          "hit": true
+        },
+        {
+          "id": "27f8cc38e3df3049d4f0aed1",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 22,
+          "text": ", won’t be optimized for running social media apps.\n\nMany computing innovations were initially developed for military research and communication purposes,\nincluding the predecessor to the Internet, the ARPANET (Figure 1.3).\n\n1 S. Golomb, “Richard E. Bellman 1920–1984,” n.d. https://www.nae.edu/189177/RICHARD-E-BELLMAN-19201984\n2 Geeks for Geeks, “Dynamic Programming or DP,” 2024. https://www.geeksforgeeks.org/dynamic-programming/\n3 D. E. Knuth, “George Forsythe and the Development of Computer Sc",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.18906197161215255,
+          "hit": false
+        },
+        {
+          "id": "f5182b056c49250db037b797",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 21,
+          "text": "ltiple analog calculating machines invented during the 1600s.\n\nScientists continued to explore different ways to speed up or automate calculations. In the 1820s, English\nmathematician Charles Babbage invented the Difference Engine with the goal of preventing human errors in\nmanual calculations. The Difference Engine provided a means to automate the calculations of polynomial\nfunctions and astronomical calculations.\n\nBabbage followed the Difference Engine with his invention of the Analytical Engi",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.054606396769787104,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "32a272fb9241ae25e99e9c57"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 2.7490000011312077
+    },
+    {
+      "query_id": "q08",
+      "question": "Who popularized the term computer science in 1961?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "642d1eee61136b2a2ac68b61",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 22,
+          "text": "ming, complex\nproblems are divided into more manageable subproblems. Each subproblem is solved, and the results are\nstored, ultimately resulting in a solution to the overall complex problem.2 With this approach, Bellman helped\nrevolutionize computer programming and enable computer science to become a robust field.\n\nWhat Is Computer Science?\nThe term computerscience was popularized by George E. Forsythe in 1961. A mathematician who founded\nStanford University’s computer science department, Forsyt",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2700176405070018,
+          "hit": true
+        },
+        {
+          "id": "8600a6d26a90755e2b914d8e",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "ct with items made possible by computer science. Computer science is\na challenging field, and the outputs of computer science offer many benefits for society. At the same time, we\nhave to be cautious about how we use computer science to ensure it impacts society in ethical ways. To help\nyou understand this, the next section will explain how computer science came to be and discuss the field’s\npotential.\n\n1.1 Computer Science\n\nLearning Objectives\nBy the end of this section, you will be able to:\n• ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.13835953443471727,
+          "hit": false
+        },
+        {
+          "id": "36c97e25d46749b8e65c9078",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "y the end of this section, you will be able to:\n• Discuss the history that led to the creation of computer science as a field\n• Define computer science\n• Assess what computer science can do, as well as what it should not do\n\nThe field of computer science (CS) is the study of computing, which includes all phenomena related to\ncomputers, such as the Internet. With foundations in engineering and mathematics, computer science focuses\non studying algorithms. An algorithm is a sequence of precise inst",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.12179888804681051,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "642d1eee61136b2a2ac68b61"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 2.7189999982510926
+    },
+    {
+      "query_id": "q09",
+      "question": "What are the four hardware components described in the book?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": {
+        "chapter": "chapter_1"
+      },
+      "results": [
+        {
+          "id": "561dee9c51b61d3f634f7d0b",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 23,
+          "text": "ter science. All computers are made of physical, real-\nworld material that we refer to as hardware. Hardware—which has four components, including processor,\nmemory, network, and storage—is the computer component that enables computations. The processor can\nbe regarded as the computer’s “brain,” as it follows instructions from algorithms and processes data. The\nmemory is a means of addressing information in a computer by storing it in consistent locations, while the\nnetwork refers to the various ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.19270277629043586,
+          "hit": true
+        },
+        {
+          "id": "4ec66d5fd93a92267234ec84",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 23,
+          "text": "ocations, while the\nnetwork refers to the various technological devices that are connected and share information. The hardware\nand physical components of a computer that permanently house a computer’s data are called storage.\n\nOne way to understand computers is from a hardware perspective: computers leverage digital electronics and\nthe physics of materials used to develop transistors. For example, many of today’s computers rely on the\nphysical properties of a brittle, crystalline metalloid calle",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.11319694088278676,
+          "hit": false
+        },
+        {
+          "id": "27c0d5df59f1e77c8114ef21",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 19,
+          "text": "ing aspects of problem-solving and analytical thinking\nthat enable the study of algorithms, which are step-by-step instructions for solving specific problems or\ncarrying out computations. Therefore, this book also covers algorithms and their realization via programming\nlanguages, computer systems architectures, networks, and operating systems. The book subsequently delves\ninto computer science areas that enable the design and development of software solutions using high-level\nprogramming languag",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.09260272760576316,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "561dee9c51b61d3f634f7d0b"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 2.773000000161119
+    },
+    {
+      "query_id": "q10",
+      "question": "What technology did ENIAC use instead of silicon?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "b661fec20de788b6542ee5ce",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 23,
+          "text": "athways at the microscopic scale to form the physical basis for modern computers.\n\nHowever, the physical basis of computers was not always silicon. The Electronic Numerical Integrator and\nComputer (ENIAC) was completed in 1945, making it one of the earliest digital computers. The ENIAC operated\non different physical principles. Instead of silicon, the ENIAC used the technology of a vacuum tube, a physical\ndevice like a light bulb that was used as memory in early digital computers. When the “ligh",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.24737819208090497,
+          "hit": true
+        },
+        {
+          "id": "ebcd5359f38e0eaa85e1a7d7",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 28,
+          "text": "s, and a lack of curricular materials. Ames argues\nthat “charismatic technologies are deceptive: they make both technological adoption and social change appear\nstraightforward instead of as a difficult process fraught with choices and politics.” When the computers did\n\n8 U.S. Bureau of Labor Statistics, “Computer and Information Research Scientists: Job Outlook,” 2024. https://www.bls.gov/ooh/\ncomputer-and-information-technology/computer-and-information-research-scientists.htm#tab-6\n9 U.S. Citiz",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.08127641409844054,
+          "hit": false
+        },
+        {
+          "id": "365adf034b4ca8ccba4d25b7",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 27,
+          "text": "panic people did not have the same access\nas even Black Americans to computers and higher education. Kamal Al-Mansour, a technical contract\nnegotiator at the NASA Jet Propulsion Lab, worked on space projects while Ronald Reagan was president. He\nrecounts:\n\n“It was conflicting . . . doing a gig . . . supporting missiles in the sky, (while) trying to find my own identity and\nculture . . . JPL was somewhat hostile . . . and I would come home each day [thinking] What did I accomplish\nthat benefited ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.07870193901506743,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "b661fec20de788b6542ee5ce"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 4.387900000438094
+    },
+    {
+      "query_id": "q11",
+      "question": "What does Turing-complete mean for a computer?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "287d9fdfcff7ddcb9888256d",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 24,
+          "text": ") because\nthey share the same fundamental model for computing results and every computer has the ability to run any\nalgorithm. Alan Mathison Turing was an English mathematician who was highly influential in the development\nof theoretical computer science, which focuses on the mathematical processes behind software, and provided\na formalization of the concepts of algorithm and computation with the Turing machine. A Turing-complete\ncomputer stores data in memory (either using vacuum tubes or silic",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.28148618992581836,
+          "hit": true
+        },
+        {
+          "id": "abfc27842ba832c6da7b2f03",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 24,
+          "text": "which considers how computers in general—not just the ENIAC or today’s computers, but even\ntomorrow’s computers that we haven’t yet invented—can solve problems. This theoretical perspective expands\ncomputer science knowledge by contributing ideas about (1) whether a problem can be computed by a Turing-\ncomplete computer at all, (2) how that problem might be computed using an algorithm, and (3) how quickly or\nefficiently a computer can run such an algorithm. The answers to these questions suggest",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.1886864023987439,
+          "hit": false
+        },
+        {
+          "id": "ab5a083a29bde38c6a469330",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 24,
+          "text": " to the human eye. (credit: modification of \"Women holding parts of the first four Army\ncomputers\" by U.S. Army/Wikimedia Commons, Public Domain)\n\nHow is this possible? The algorithmic principles that determine how results are computed makes up software.\nAlmost all computers, from the ENIAC to today’s computers, are considered Turing-complete (or\nComputationally Universal, as opposed to specialized computing devices such as scientific calculators) because\nthey share the same fundamental model fo",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.1618184021535751,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "287d9fdfcff7ddcb9888256d"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 3.5785000000032596
+    },
+    {
+      "query_id": "q12",
+      "question": "What is the LOGO programming language known for?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "83d2b0d14a0fbd4a6f795e54",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 25,
+          "text": "inant vision for computer\nscience. For example, consider computers in education.\n\nAround the same time that the ARPANET began development in the late 1960s, Wally Feurzeig, Seymour\nPapert, and Cynthia Solomon designed the LOGO programming language to enable new kinds of computer-\nmediated expression and communication. Compared to contemporary programming languages such as\nFORTRAN (FORmula TRANslation System) that emphasized computation toward scientific and engineering\napplications, LOGO is well",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.269809086480313,
+          "hit": false
+        },
+        {
+          "id": "371e41a16dfdd12d00fe6117",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 34,
+          "text": "nd all the things that\npeople are doing with computer science. However, computer science’s historical roots in mathematics shape\nthe way it categorizes subfields:\n\n• Theoretical computer science\n◦ Theory of computation\n◦ Information representation\n◦ Data structures and algorithms\n◦ Programming language and formal methods\n• Computer systems\n◦ Architecture\n◦ Artificial intelligence\n◦ Networks\n\nAccess for free at openstax.org",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.11956424936171742,
+          "hit": false
+        },
+        {
+          "id": "2b2bd1a7c9fe9195342796ee",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 25,
+          "text": "entific and engineering\napplications, LOGO is well known for its use of turtle graphics, whereby programs were used to control the\nactions of a digital turtle using instructions such as moving forward some number of units and turning left or\nright some number of degrees. Papert argued that this turtle programming enabled body-syntonicreasoning,\na kind of experience that could help students more effectively learn concepts in mathematics such as angles,\ndistance, and geometric shapes by instructin",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.10482985020078782,
+          "hit": true
+        }
+      ],
+      "context_ids": [
+        "83d2b0d14a0fbd4a6f795e54"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": true,
+      "context_hit": false,
+      "elapsed_ms": 2.7614999999059364
+    },
+    {
+      "query_id": "q13",
+      "question": "Which careers beyond software engineering are mentioned for computer scientists?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "06d5caaac5b5c7332ba89cee",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 32,
+          "text": "esses.\n\n• Mathematics plays a key role in theoretical computer science, which emphasizes how a computational\nproblem can be defined in mathematical terms and whether that mathematical problem can be efficiently\nsolved with a computer.\n• Engineering plays a key role in software engineering, which emphasizes how problems can be solved\nwith computers as well as the practices and processes that can help people design more effective software\nsolutions.\n\nAccess for free at openstax.org",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.17478011218009804,
+          "hit": false
+        },
+        {
+          "id": "a62c876720a94438c0884c8a",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 39,
+          "text": "research, computer scientists analyze\nways that technology can be used and gain insight and answers to address issues and improve various aspects\nof society. Research enables computer scientists to make advancements like the design of new algorithms,\ndevelopment of new hardware and software, and applications for emerging technologies such as AI.\n\nOne important use of research is to investigate adversarial attacks to gather answers needed for computer\nscientists to improve foundational technologi",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.14580456930348326,
+          "hit": false
+        },
+        {
+          "id": "bb3365dc1e201145e828e4c0",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 35,
+          "text": "1.3 • Computer Science and the Future of Society 25\n\n◦ Security\n◦ Databases\n◦ Distributed computing\n◦ Graphics\n• Applied computer science\n◦ Scientific computing\n◦ Human-computer interaction\n◦ Software engineering\nIn this hierarchy, theoretical computer science and computer systems are treated separately from applied\ncomputer science and human-computer interaction, suggesting that the mathematics of computing are pure\nand separate from social questions. Yet we’ve seen several examples that questi",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.13769857469889224,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "06d5caaac5b5c7332ba89cee"
+      ],
+      "context_chars": 572,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 2.631499999552034
+    },
+    {
+      "query_id": "q14",
+      "question": "Who helped develop the Industry Standard Architecture bus at IBM?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "87bf50a02c5d670ec1912d5e",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 27,
+          "text": "et social media platforms, news, and blog websites. For example, Roy L. Clay Sr., a member of the\nSilicon Valley Engineering Hall of Fame, helped Hewlett-Packard develop its first computer lab and create the\ncompany’s first computers. Later, Clay provided information to venture capitalists that motivated them to\ninvest in start-ups such as Intel and Compaq.5 In another example, Mark Dean was an engineer for IBM whose\nwork was instrumental in helping IBM develop the Industry Standard Architecture",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2990702997341496,
+          "hit": true
+        },
+        {
+          "id": "60f7628556dff18ae78ef778",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 27,
+          "text": "ing IBM develop the Industry Standard Architecture (ISA) bus, which created a\nmethod of connecting a computer’s processor with other components and enabling them to communicate.\nThis led to the creation of PCs, with Dean owning three of the nine patents used to create the original PC.6\n\nYet their efforts were often hampered by the way that computer science failed to center, or even\naccommodate, Black people. Historically, American Indians and Hispanic people did not have the same access\nas even ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2988120247633422,
+          "hit": false
+        },
+        {
+          "id": "d91aa41220ff8597151540a7",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 29,
+          "text": "an quickly catch up without spending the money that was invested\nto develop the original technologies. For example, we can set up ad hoc networks quickly today and at a",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.03511668114417404,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "87bf50a02c5d670ec1912d5e"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 2.6450999994267477
+    },
+    {
+      "query_id": "q15",
+      "question": "What happens as spreadsheets involve more data and more people?",
+      "split": "dev",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "df07173cbc581ca16ce3f9b1",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 31,
+          "text": "1.2 • Computer Science across the Disciplines 21\n\nvery same power that limits spreadsheets as a data management and large-scale data analysis tool. The more\ndata and the more people involved in a spreadsheet, the greater the potential for spreadsheet problems.\n\nThe interdisciplinary field that applies computing to managing data and extracting information from data is\ncalled data science. Data scientists are practitioners who combine computing and data analysis skills with the\ndomain knowledge sp",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.17775946996984288,
+          "hit": true
+        },
+        {
+          "id": "74849b4707616e3e04eb5315",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 30,
+          "text": " is an example of a data-centric\nprogramming environment where data is organized into cells in a table. Instead of presenting programs as\nprimarily about algorithms, spreadsheets present programs as primarily about data. Spreadsheets are often\nused for data analysis by offering a way to organize, share, and communicate ideas about data. Spreadsheets\nare uniquely effective and accessible because they allow for the visual organization of data in whichever\nstructure makes the most sense to the user",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.15316978945632787,
+          "hit": false
+        },
+        {
+          "id": "1e79ffb9ce5fb6e5324bb2de",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 31,
+          "text": " data analysis skills with the\ndomain knowledge specific to their field or business. The demand for data scientists is becoming increasingly\nimportant as more and more research and business contexts involve analyzing big data, or very large datasets\nthat are not easily processed using spreadsheets. These datasets often involve high-volume measurements of\nuser interactions on the Internet at a very fine grain, such as tracking a customer’s web browser history across\nan online storefront. Data sci",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.1348385857323912,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "df07173cbc581ca16ce3f9b1"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 4.089399999429588
+    }
+  ]
+}

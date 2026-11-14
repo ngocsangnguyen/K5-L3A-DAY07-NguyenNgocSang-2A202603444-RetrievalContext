@@ -37,7 +37,7 @@ def main():
     questions = [convert_question(q) for q in raw_questions]
     args.output.mkdir(parents=True, exist_ok=True)
     for name, data in (('chunks.json', chunks), ('questions.json', questions)):
-        (args.output / name).write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        (args.output / name).write_text(json.dumps(data, ensure_ascii=True, indent=2) + '\n', encoding='utf-8')
     print('Đã chuyển đổi; kiểm tra output và chạy baseline trên dev để kiểm chứng.')
 
 

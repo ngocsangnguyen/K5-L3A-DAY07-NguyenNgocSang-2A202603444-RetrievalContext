@@ -1,0 +1,316 @@
+{
+  "summary": {
+    "strategy": "dense",
+    "chunk_strategy": "A",
+    "split": "test",
+    "n": 5,
+    "hit1": 3,
+    "hit3": 3,
+    "context_hit": 3,
+    "hit1_rate": 0.6,
+    "hit3_rate": 0.6,
+    "context_hit_rate": 0.6,
+    "avg_latency_ms": 165.6459600002563
+  },
+  "traces": [
+    {
+      "query_id": "q16",
+      "question": "How does machine learning differ from hand-crafted rules?",
+      "split": "test",
+      "strategy": "dense",
+      "filters": null,
+      "results": [
+        {
+          "id": "c3c9d54ceaa6b6ff2a680f1d",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 35,
+          "text": " intelligence and machine learning have applications that directly influence human\ndecision-making, ranging from advertisement targeting to language translation to self-driving cars. Effective\ncomputational solutions to research or business problems require combining specific knowledge with\ncomputer science concepts from a combination of areas. For example, the computational science application\nof weather prediction combines knowledge about various subfields of computer science (algorithms,\ndist",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.6029857756487008,
+          "hit": false
+        },
+        {
+          "id": "0f72cb429f68f64840f703ce",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 31,
+          "text": "wser history across\nan online storefront. Data scientists can then analyze browser patterns using machine learning methods in\norder to recommend related products, target advertisements to specific customers over social media, and\nreengage customers over email or other means. Machine learning (ML) is a subset of artificial intelligence that\nrelies on algorithms and data to make it possible for artificial intelligence to learn, actually mimicking the way\nhumans learn. For example, ML is used to id",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.5523857207528197,
+          "hit": false
+        },
+        {
+          "id": "8a0269ac6308a8a16be0a273",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 60,
+          "text": " outcome, such as the\npositioning of key pieces and the opponent’s tendencies, sidelining less critical factors—this is an\nabstraction.\n• Drawing from prior knowledge and experiences in similar scenarios, a step-by-step approach is\ndeveloped to navigate through the game—this is algorithmic thinking.\n\nShould you venture into developing your own chess program or strategy, these are precisely the types of\nconsiderations you would deliberate on and resolve before actual programming.\n\nTesting and Deb",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.5397888422012368,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "c3c9d54ceaa6b6ff2a680f1d"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 324.22130000122706
+    },
+    {
+      "query_id": "q17",
+      "question": "How does the book characterize computational thinking?",
+      "split": "test",
+      "strategy": "dense",
+      "filters": {
+        "chapter": "chapter_2"
+      },
+      "results": [
+        {
+          "id": "8438182b96034ea79a7bfa81",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 51,
+          "text": "2.1 • Computational Thinking 41\n\n76CompThinking) from the BBC.\n\nVision\n\nTo further qualify computational thinking, Al Aho of the Columbia University Computer Science Department\ndescribes computational thinking as “the thought processes involved in formulating problems so their\nsolutions can be represented as computational steps and algorithms.” Jeannette Wing, also of Columbia\nUniversity, brought the idea of computational thinking to prominence in a paper she wrote in 2006 while at\nCarnegie Mell",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.7997521758079529,
+          "hit": true
+        },
+        {
+          "id": "2ac24cbd1a06683e9c5a1937",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 51,
+          "text": "n a paper she wrote in 2006 while at\nCarnegie Mellon University. She believes that computational thinking details the mental acts needed to\ncompute a solution to a problem either by human actions or machine. Computational thinking encompasses a\ncollection of methods and approaches for resolving (and acquiring the skills to resolve) complex challenges,\nclosely aligned with mathematical thinking through its utilization of abstraction, generalization, modeling, and\nmeasurement (Figure 2.2). However",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.7492556125369316,
+          "hit": false
+        },
+        {
+          "id": "f1ae4268e28068809e894057",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 50,
+          "text": "ne computational thinking\n• Discuss computational thinking examples\n\nThis chapter presents key aspects of computational thinking, including logical thinking, assessment,\ndecomposition, pattern recognition, abstraction, generalization, componentization, and automation. These\nelements guide how computer scientists approach problems and create well-designed solution building blocks\nat both the business and technical levels. Computational thinking often involves a bottom-up approach,\nfocusing on com",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.7194423246716081,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "8438182b96034ea79a7bfa81"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 109.43840000072669
+    },
+    {
+      "query_id": "q18",
+      "question": "What is decomposition in computational thinking?",
+      "split": "test",
+      "strategy": "dense",
+      "filters": null,
+      "results": [
+        {
+          "id": "f0525a494f8a3c2bc952ca54",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 53,
+          "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.8772987650214905,
+          "hit": true
+        },
+        {
+          "id": "8fc30d2834ee2909e30c2fb6",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 52,
+          "text": "42 2 • Computational Thinking and Design Reusability\n\nis called decomposition. This approach helps analyze and solve problems more effectively.\n• Pattern recognition (logically organizing and analyzing data): Computational thinking emphasizes the\nlogical organization and analysis of data. This includes the ability to structure information in a way that\nfacilitates effective problem-solving.\n• Representing data through abstractions: An abstraction is a simplified representation of complex systems",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.806993055760448,
+          "hit": false
+        },
+        {
+          "id": "8697ec2d32bc5d4382fc20b3",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 52,
+          "text": " is a simplified representation of complex systems\nor phenomena. Computational thinking involves representing data through an abstraction, such as a\nsimulation, which uses models as surrogates for real systems.\n• Automation through algorithmic thinking: Using a program or computer application to perform repetitive\ntasks or calculations is considered automation.\n• Identification, analysis, and implementation of solutions: Computational thinking emphasizes\nidentification, analysis, and implementat",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.7329652746299086,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "f0525a494f8a3c2bc952ca54"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 110.96309999993537
+    },
+    {
+      "query_id": "q19",
+      "question": "What does decomposition help accomplish?",
+      "split": "test",
+      "strategy": "dense",
+      "filters": {
+        "chapter": "chapter_2"
+      },
+      "results": [
+        {
+          "id": "beb40851f07e8b7c95acfeb3",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 54,
+          "text": "44 2 • Computational Thinking and Design Reusability\n\nyou can contribute to the development and refinement of strategies that effectively improve road safety.\n\nDecomposition\n\nDecomposition involves solving a complex problem by breaking it up into smaller, more manageable tasks.\nDecomposition enables the consideration of various components essential for solving a seemingly complex\ntask, allowing it to be redefined into a more manageable problem. In the case of the jam sandwich example,\ndecomposit",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.6450378279421775,
+          "hit": true
+        },
+        {
+          "id": "f0525a494f8a3c2bc952ca54",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 53,
+          "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.6132558766977753,
+          "hit": false
+        },
+        {
+          "id": "8fc30d2834ee2909e30c2fb6",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 52,
+          "text": "42 2 • Computational Thinking and Design Reusability\n\nis called decomposition. This approach helps analyze and solve problems more effectively.\n• Pattern recognition (logically organizing and analyzing data): Computational thinking emphasizes the\nlogical organization and analysis of data. This includes the ability to structure information in a way that\nfacilitates effective problem-solving.\n• Representing data through abstractions: An abstraction is a simplified representation of complex systems",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.5876522239342997,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "beb40851f07e8b7c95acfeb3"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 147.48099999997066
+    },
+    {
+      "query_id": "q20",
+      "question": "What visual representation can express an algorithm's steps?",
+      "split": "test",
+      "strategy": "dense",
+      "filters": null,
+      "results": [
+        {
+          "id": "3524443dcf913b1db14dfd60",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 53,
+          "text": "ls. This technique enables a clearer understanding of the core issues.\n• Algorithms are like detailed sets of instructions for solving a problem step-by-step. They help break down\ncomplex tasks into manageable actions, ensuring a clear path to problem-solving.\n\nFigure 2.4 Users can explore the essence of computational thinking through decomposition, logical thinking, abstraction, and\nalgorithms. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nIn addition to the",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.6030535338489106,
+          "hit": false
+        },
+        {
+          "id": "832db2aaf0504db3ebf5fb62",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "rithms. An algorithm is a sequence of precise instructions that enables computing. This\nincludes components computers use to process information. By studying and applying algorithms, computer\nscience creates applications and solutions that impact all areas of society. For example, computer science\ndeveloped the programs that enable online shopping, texting with friends, streaming music, and other\ntechnological processes.\n\nWhile computers are common today, they weren’t always this pervasive. For ",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.5716275828106662,
+          "hit": false
+        },
+        {
+          "id": "ee8e43083b1f5c106015e673",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 36,
+          "text": "cult for programmers to solve using traditional\nprogramming methods. Imagine having to define very precise rules or instructions that could identify an\nobject in an image regardless of its position, size, lighting conditions, or perspective. As humans, we have an\nintuitive sense of the qualities of an object. However, representing this human intelligence in a machine\nrequiring strict rules or instructions is a much harder task. AI methods for image recognition involve designing\nalgorithm archite",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.5691394127441153,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "3524443dcf913b1db14dfd60"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 136.12599999942177
+    }
+  ]
+}

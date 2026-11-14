@@ -1,0 +1,174 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What does computer science study?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "What is an algorithm in computer science?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "How does binary search narrow its search interval?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Who developed logarithms in 1614?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Why was the Difference Engine invented?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Who is described as the first computer programmer?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Who invented dynamic programming in 1953?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Who popularized the term computer science in 1961?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What are the four hardware components described in the book?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "What technology did ENIAC use instead of silicon?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "What does Turing-complete mean for a computer?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "What is the LOGO programming language known for?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Which careers beyond software engineering are mentioned for computer scientists?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Who helped develop the Industry Standard Architecture bus at IBM?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "What happens as spreadsheets involve more data and more people?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "How does machine learning differ from hand-crafted rules?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "How does the book characterize computational thinking?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "What is decomposition in computational thinking?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "What does decomposition help accomplish?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "What visual representation can express an algorithm's steps?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "u01",
+    "split": "dev",
+    "question": "What is the exact release date of Python 3.15?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "CANDIDATE: cần kiểm tra toàn bộ corpus trước khi xác nhận thiếu evidence."
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "question": "What is the current market share of Windows 11 in Vietnam?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "CANDIDATE: cần kiểm tra toàn bộ corpus trước khi xác nhận thiếu evidence."
+  },
+  {
+    "id": "u03",
+    "split": "test",
+    "question": "What is the exact electricity consumption of the computer used by the authors?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "CANDIDATE: cần kiểm tra toàn bộ corpus trước khi xác nhận thiếu evidence."
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "question": "What is the personal email address of the first computer programmer?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "CANDIDATE: cần kiểm tra toàn bộ corpus trước khi xác nhận thiếu evidence."
+  }
+]

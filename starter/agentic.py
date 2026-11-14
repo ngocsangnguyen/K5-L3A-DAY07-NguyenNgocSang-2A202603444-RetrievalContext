@@ -4,8 +4,7 @@ Adapters are intentionally not provided: Day 6 has no fixed database schema and
 model providers differ. Never use fake adapters to report benchmark quality.
 """
 from typing import Any, Protocol
-from baseline import pack_context
-
+from context_expansion import expanded_context
 
 class Controller(Protocol):
     def decide(self, question: str, history: list[dict[str, Any]]) -> dict[str, Any]:
@@ -55,21 +54,71 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
             if len(results) > top_k or len({r['id'] for r in results}) != len(results):
                 raise ValueError('retriever phải trả tối đa top_k chunk ID duy nhất')
             candidates.extend(results)
-            context, ids = pack_context(candidates, budget=budget)
-            chunks = {c['id']: c for c in candidates if c['id'] in ids}
+            catalog = getattr(retriever, "tfidf", retriever)
+            all_chunks = getattr(catalog, "chunks", candidates)
+            context, ids = expanded_context(
+                candidates,
+                all_chunks,
+                budget=budget,
+            )
+
+            chunks = {
+                c["id"]: c
+                for c in all_chunks
+                if c["id"] in ids
+            }
             events.append({'event': 'search', 'query': query, 'filter': filters, 'results': results,
                            'context': context, 'context_ids': ids})
             # Send only the latest cumulative context; avoid multiplying the budget.
             history = [{'tool': 'search', 'queries': [e['query'] for e in events if e['event'] == 'search'],
                         'context': context, 'context_ids': ids}]
         elif action.get('action') == 'answer':
-            answer, citations = action.get('answer'), action.get('citations')
-            if not isinstance(answer, str) or not isinstance(citations, list) or any(not isinstance(i, str) for i in citations):
+            answer = action.get('answer')
+            citations = action.get('citations')
+
+            if (
+                not isinstance(answer, str)
+                or not isinstance(citations, list)
+                or any(not isinstance(i, str) for i in citations)
+            ):
                 raise ValueError('answer/citations không hợp lệ')
-            valid = bool(answer.strip() and citations and all(i in chunks and f'[{i}]' in answer for i in citations))
+
+            # Trường hợp 1: Agent chủ động abstain
+            if not answer.strip() and not citations:
+                return {
+                    'status': 'abstain',
+                    'answer': 'Không đủ bằng chứng để trả lời.',
+                    'citations': [],
+                    'events': events + [{'event': 'abstain'}]
+                }
+
+            # Trường hợp 2: Kiểm tra citation hợp lệ
+            valid = bool(
+                answer.strip()
+                and citations
+                and all(
+                    i in chunks and f'[{i}]' in answer
+                    for i in citations
+                )
+            )
+
             if valid:
-                return {'status': 'answered', 'answer': answer, 'citations': citations, 'events': events + [{'event': 'answer'}]}
-            return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events + [{'event': 'invalid_or_missing_citations'}]}
+                return {
+                    'status': 'answered',
+                    'answer': answer,
+                    'citations': citations,
+                    'events': events + [{'event': 'answer'}]
+                }
+
+            # Trường hợp 3: Citation sai hoặc thiếu
+            return {
+                'status': 'abstain',
+                'answer': 'Không đủ bằng chứng để trả lời.',
+                'citations': [],
+                'events': events + [
+                    {'event': 'invalid_or_missing_citations'}
+                ]
+            }
         else:
             raise ValueError('action phải là search hoặc answer')
     return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events}

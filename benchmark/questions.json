@@ -1,0 +1,214 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What does computer science study?",
+    "expected_answer": "The study of computing",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 20,
+    "evidence_quote": "s what computer science can do, as well as what it should not do The field of computer science (CS) is the study of computing, which includes all phenomena related to computers, such as the Internet. With foundations in",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "What is an algorithm in computer science?",
+    "expected_answer": "A sequence of precise instructions",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 20,
+    "evidence_quote": "nd mathematics, computer science focuses on studying algorithms. An algorithm is a sequence of precise instructions that enables computing. This includes components computers use to process information. By stud",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "How does binary search narrow its search interval?",
+    "expected_answer": "By repeatedly halving it",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 20,
+    "evidence_quote": "sorted array of integers efficiently. The algorithm operates by repeatedly dividing the search interval in half to perform the search. If the number being searched is less than the integer in the middle of",
+    "question_type": "metadata_filter",
+    "filter": {
+      "chapter": "chapter_1"
+    }
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Who developed logarithms in 1614?",
+    "expected_answer": "John Napier",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 21,
+    "evidence_quote": "development in the evolution of computing occurred in 1614 when John Napier, a Scottish mathematician, developed logarithms, which express exponents by denoting the power",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Why was the Difference Engine invented?",
+    "expected_answer": "To prevent errors in manual calculations",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 21,
+    "evidence_quote": "Charles Babbage invented the Difference Engine with the goal of preventing human errors in manual calculations. The Difference Engine provided a means to automate the calculations of polynomial functions a",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Who is described as the first computer programmer?",
+    "expected_answer": "Ada Lovelace",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 21,
+    "evidence_quote": "ode. With her work on the Analytical Engine, Lovelace became the world’s first computer programmer. The next major development in computing occurred in the late 1800s when Herman Hollerith, an",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Who invented dynamic programming in 1953?",
+    "expected_answer": "Richard Bellman",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 22,
+    "evidence_quote": "he studied the theory of multistage decision processes. In 1953, Bellman invented dynamic programming,1 which is a mathematical optimization methodology and a technique for computer programming. W",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Who popularized the term computer science in 1961?",
+    "expected_answer": "George E. Forsythe",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 22,
+    "evidence_quote": "The term computerscience was popularized by George E. Forsythe in 1961.",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What are the four hardware components described in the book?",
+    "expected_answer": "Processor, memory, network, storage",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 23,
+    "evidence_quote": "er to as hardware. Hardware—which has four components, including processor, memory, network, and storage—is the computer component that enables computations. The processor can be regarded as the comp",
+    "question_type": "metadata_filter",
+    "filter": {
+      "chapter": "chapter_1"
+    }
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "What technology did ENIAC use instead of silicon?",
+    "expected_answer": "Vacuum tubes",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 23,
+    "evidence_quote": "inciples. Instead of silicon, the ENIAC used the technology of a vacuum tube, a physical device like a light bulb that was used as memory in early digital computers. When",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "What does Turing-complete mean for a computer?",
+    "expected_answer": "It can run any algorithm",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 24,
+    "evidence_quote": "ndamental model for computing results and every computer has the ability to run any algorithm. Alan Mathison Turing was an English mathematician who was highly influential in the developme",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "What is the LOGO programming language known for?",
+    "expected_answer": "Turtle graphics",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 25,
+    "evidence_quote": "and engineering applications, LOGO is well known for its use of turtle graphics, whereby programs were used to control the actions of a digital turtle using instructions such",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Which careers beyond software engineering are mentioned for computer scientists?",
+    "expected_answer": "Data analysts and product managers, among others",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 26,
+    "evidence_quote": "entists to play in society—not only software engineers, but also data analysts, product managers, entrepreneurs, political advisors or politicians, environmental engineers, social activists,",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Who helped develop the Industry Standard Architecture bus at IBM?",
+    "expected_answer": "Mark Dean",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 27,
+    "evidence_quote": "vest in start-ups such as Intel and Compaq.5 In another example, Mark Dean was an engineer for IBM whose work was instrumental in helping IBM develop the Industry Standa",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "What happens as spreadsheets involve more data and more people?",
+    "expected_answer": "The potential for spreadsheet problems grows",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 31,
+    "evidence_quote": "The more data and the more people involved in a spreadsheet, the greater the potential for spreadsheet problems. The interdisciplinary field that applies computing to managing data and extracting informatio",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "How does machine learning differ from hand-crafted rules?",
+    "expected_answer": "It learns from data rather than relying solely on manually crafted rules",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 37,
+    "evidence_quote": "e recognition draw on a family of methods called neural networks instead of having programmers craft rules or instructions by hand to form an algorithm. In humans, the neural network is a complex netwo",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "How does the book characterize computational thinking?",
+    "expected_answer": "Thought processes used to formulate problems",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 51,
+    "evidence_quote": "uter Science Department describes computational thinking as “the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms.” Jeannette Wing,",
+    "question_type": "metadata_filter",
+    "filter": {
+      "chapter": "chapter_2"
+    }
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "What is decomposition in computational thinking?",
+    "expected_answer": "Breaking complex problems into smaller tasks",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 53,
+    "evidence_quote": "mputational thinking, representing the process of systematically breaking down a complex problem or system into smaller, more manageable parts or subproblems. By breaking down complexity into",
+    "question_type": "direct_or_paraphrase"
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "What does decomposition help accomplish?",
+    "expected_answer": "Divide complex problems into manageable tasks",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 54,
+    "evidence_quote": "sition involves solving a complex problem by breaking it up into smaller, more manageable tasks. Decomposition enables the consideration of various components essential for solving a seeming",
+    "question_type": "metadata_filter",
+    "filter": {
+      "chapter": "chapter_2"
+    }
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "What visual representation can express an algorithm's steps?",
+    "expected_answer": "A flowchart",
+    "gold_source_id": "openstax-intro-cs",
+    "gold_page": 57,
+    "evidence_quote": "ART. The corresponding instructions can then be converted into a flowchart using the symbols in Figure 2.8. Figure 2.8 The symbols used in a flowchart are associated wit",
+    "question_type": "direct_or_paraphrase"
+  }
+]

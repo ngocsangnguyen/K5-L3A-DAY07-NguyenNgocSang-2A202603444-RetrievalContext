@@ -1,0 +1,316 @@
+{
+  "summary": {
+    "strategy": "tfidf",
+    "chunk_strategy": "A",
+    "split": "test",
+    "n": 5,
+    "hit1": 2,
+    "hit3": 3,
+    "context_hit": 2,
+    "hit1_rate": 0.4,
+    "hit3_rate": 0.6,
+    "context_hit_rate": 0.4,
+    "avg_latency_ms": 3.2759199999418342
+  },
+  "traces": [
+    {
+      "query_id": "q16",
+      "question": "How does machine learning differ from hand-crafted rules?",
+      "split": "test",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "0f72cb429f68f64840f703ce",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 31,
+          "text": "wser history across\nan online storefront. Data scientists can then analyze browser patterns using machine learning methods in\norder to recommend related products, target advertisements to specific customers over social media, and\nreengage customers over email or other means. Machine learning (ML) is a subset of artificial intelligence that\nrelies on algorithms and data to make it possible for artificial intelligence to learn, actually mimicking the way\nhumans learn. For example, ML is used to id",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.16755148256230123,
+          "hit": false
+        },
+        {
+          "id": "ee8e43083b1f5c106015e673",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 36,
+          "text": "cult for programmers to solve using traditional\nprogramming methods. Imagine having to define very precise rules or instructions that could identify an\nobject in an image regardless of its position, size, lighting conditions, or perspective. As humans, we have an\nintuitive sense of the qualities of an object. However, representing this human intelligence in a machine\nrequiring strict rules or instructions is a much harder task. AI methods for image recognition involve designing\nalgorithm archite",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.13093531964377508,
+          "hit": false
+        },
+        {
+          "id": "2a07374f1b0deba98cc7b582",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 35,
+          "text": "tions. Yet we’ve seen several examples that question this paradigm and instead\npoint to a structure where human-computer interaction is infused throughout the study of computer science\nand all its subfields.\n\nToday, computer science is a field that is just as much about people as it is about computer technology\nbecause each of these subfields is motivated by the real-world problems that people ultimately want to solve.\nThe subfields of artificial intelligence and machine learning have applicatio",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.09984523946461762,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "0f72cb429f68f64840f703ce"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 3.528100000039558
+    },
+    {
+      "query_id": "q17",
+      "question": "How does the book characterize computational thinking?",
+      "split": "test",
+      "strategy": "tfidf",
+      "filters": {
+        "chapter": "chapter_2"
+      },
+      "results": [
+        {
+          "id": "f1ae4268e28068809e894057",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 50,
+          "text": "ne computational thinking\n• Discuss computational thinking examples\n\nThis chapter presents key aspects of computational thinking, including logical thinking, assessment,\ndecomposition, pattern recognition, abstraction, generalization, componentization, and automation. These\nelements guide how computer scientists approach problems and create well-designed solution building blocks\nat both the business and technical levels. Computational thinking often involves a bottom-up approach,\nfocusing on com",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2281850968682087,
+          "hit": false
+        },
+        {
+          "id": "8438182b96034ea79a7bfa81",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 51,
+          "text": "2.1 • Computational Thinking 41\n\n76CompThinking) from the BBC.\n\nVision\n\nTo further qualify computational thinking, Al Aho of the Columbia University Computer Science Department\ndescribes computational thinking as “the thought processes involved in formulating problems so their\nsolutions can be represented as computational steps and algorithms.” Jeannette Wing, also of Columbia\nUniversity, brought the idea of computational thinking to prominence in a paper she wrote in 2006 while at\nCarnegie Mell",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2138956752879535,
+          "hit": true
+        },
+        {
+          "id": "f0525a494f8a3c2bc952ca54",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 53,
+          "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.18667685260238737,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "f1ae4268e28068809e894057"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": true,
+      "context_hit": false,
+      "elapsed_ms": 2.808700000969111
+    },
+    {
+      "query_id": "q18",
+      "question": "What is decomposition in computational thinking?",
+      "split": "test",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "f0525a494f8a3c2bc952ca54",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 53,
+          "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.3651887348855193,
+          "hit": true
+        },
+        {
+          "id": "f1ae4268e28068809e894057",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 50,
+          "text": "ne computational thinking\n• Discuss computational thinking examples\n\nThis chapter presents key aspects of computational thinking, including logical thinking, assessment,\ndecomposition, pattern recognition, abstraction, generalization, componentization, and automation. These\nelements guide how computer scientists approach problems and create well-designed solution building blocks\nat both the business and technical levels. Computational thinking often involves a bottom-up approach,\nfocusing on com",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.35676823626508014,
+          "hit": false
+        },
+        {
+          "id": "8438182b96034ea79a7bfa81",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 51,
+          "text": "2.1 • Computational Thinking 41\n\n76CompThinking) from the BBC.\n\nVision\n\nTo further qualify computational thinking, Al Aho of the Columbia University Computer Science Department\ndescribes computational thinking as “the thought processes involved in formulating problems so their\nsolutions can be represented as computational steps and algorithms.” Jeannette Wing, also of Columbia\nUniversity, brought the idea of computational thinking to prominence in a paper she wrote in 2006 while at\nCarnegie Mell",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.2819894957955341,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "f0525a494f8a3c2bc952ca54"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 2.6397999990876997
+    },
+    {
+      "query_id": "q19",
+      "question": "What does decomposition help accomplish?",
+      "split": "test",
+      "strategy": "tfidf",
+      "filters": {
+        "chapter": "chapter_2"
+      },
+      "results": [
+        {
+          "id": "beb40851f07e8b7c95acfeb3",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 54,
+          "text": "44 2 • Computational Thinking and Design Reusability\n\nyou can contribute to the development and refinement of strategies that effectively improve road safety.\n\nDecomposition\n\nDecomposition involves solving a complex problem by breaking it up into smaller, more manageable tasks.\nDecomposition enables the consideration of various components essential for solving a seemingly complex\ntask, allowing it to be redefined into a more manageable problem. In the case of the jam sandwich example,\ndecomposit",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.11502985610608175,
+          "hit": true
+        },
+        {
+          "id": "a69e34a4dad80d5d128a8e39",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 54,
+          "text": "n the case of the jam sandwich example,\ndecomposition involves identifying all the required ingredients and the steps the robot must take to\nsuccessfully create a jam sandwich.\nLogical Thinking and Pattern Recognition\n\nPattern recognition makes it possible to group all the different features considered in decomposition into\ncategories. In the jam sandwich example, pattern recognition leads to grouping the various things identified\nvia decomposition into categories, in this case, ingredients, equ",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.09853854298294311,
+          "hit": false
+        },
+        {
+          "id": "f0525a494f8a3c2bc952ca54",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 53,
+          "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.08027803167470689,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "beb40851f07e8b7c95acfeb3"
+      ],
+      "context_chars": 588,
+      "hit1": true,
+      "hit3": true,
+      "context_hit": true,
+      "elapsed_ms": 4.086799999640789
+    },
+    {
+      "query_id": "q20",
+      "question": "What visual representation can express an algorithm's steps?",
+      "split": "test",
+      "strategy": "tfidf",
+      "filters": null,
+      "results": [
+        {
+          "id": "653fce3d88dad4da6d11cffe",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 20,
+          "text": "or\npeople with visual impairments. However, abaci are not common today because of the invention of number\nsystems such as the Arabic number system (0, 1, 2, 3, . . .), which included zero and place values that cannot be\ncomputed with abaci. The concept of an algorithm was also invented around this time. Algorithms use inputs\nand a finite number of steps to carry out arithmetic operations like addition, subtraction, multiplication, and\ndivision, and produce outputs used in computing. Today’s comp",
+          "metadata": {
+            "chapter": "chapter_1",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.09704641178510115,
+          "hit": false
+        },
+        {
+          "id": "4bfc4d5954e42752259658da",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 56,
+          "text": "ould be butter on the bread.\n2. Either spread butter on the bread,\n3. Or, do not use butter.\n\nThese steps can be added as actions in the table previously shown and expressed as steps in the pseudocode\n\nAccess for free at openstax.org",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.09372054687179479,
+          "hit": false
+        },
+        {
+          "id": "27a6e205c85a0f066955d079",
+          "source_id": "openstax-intro-cs",
+          "source": "data\\corpus\\introduction_to_computer_science.pdf",
+          "page": 56,
+          "text": "46 2 • Computational Thinking and Design Reusability\n\nFigure 2.6 When using GenAI, a user interacts with the interface while the application processes the prompt with layers of\nabstraction on the back end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\nAlgorithm\n\nAn algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem.\nAlgorithms make it possible to describe a solution to a problem by writing down the instru",
+          "metadata": {
+            "chapter": "chapter_2",
+            "category": "computer_science",
+            "language": "en"
+          },
+          "score": 0.08942438897722149,
+          "hit": false
+        }
+      ],
+      "context_ids": [
+        "653fce3d88dad4da6d11cffe"
+      ],
+      "context_chars": 588,
+      "hit1": false,
+      "hit3": false,
+      "context_hit": false,
+      "elapsed_ms": 3.3161999999720138
+    }
+  ]
+}
