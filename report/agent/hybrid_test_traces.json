@@ -1,0 +1,862 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "question": "How does machine learning differ from hand-crafted rules?",
+    "retriever": "hybrid",
+    "model": "openai/gpt-4o-mini",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 800,
+    "search_calls": 2,
+    "elapsed_seconds": 2.921600199999375,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "How does machine learning differ from hand-crafted rules?",
+        "filter": null,
+        "results": [
+          {
+            "id": "0f72cb429f68f64840f703ce",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 31,
+            "text": "wser history across\nan online storefront. Data scientists can then analyze browser patterns using machine learning methods in\norder to recommend related products, target advertisements to specific customers over social media, and\nreengage customers over email or other means. Machine learning (ML) is a subset of artificial intelligence that\nrelies on algorithms and data to make it possible for artificial intelligence to learn, actually mimicking the way\nhumans learn. For example, ML is used to id",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03252247488101534
+          },
+          {
+            "id": "c3c9d54ceaa6b6ff2a680f1d",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 35,
+            "text": " intelligence and machine learning have applications that directly influence human\ndecision-making, ranging from advertisement targeting to language translation to self-driving cars. Effective\ncomputational solutions to research or business problems require combining specific knowledge with\ncomputer science concepts from a combination of areas. For example, the computational science application\nof weather prediction combines knowledge about various subfields of computer science (algorithms,\ndist",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.032018442622950824
+          },
+          {
+            "id": "ee8e43083b1f5c106015e673",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 36,
+            "text": "cult for programmers to solve using traditional\nprogramming methods. Imagine having to define very precise rules or instructions that could identify an\nobject in an image regardless of its position, size, lighting conditions, or perspective. As humans, we have an\nintuitive sense of the qualities of an object. However, representing this human intelligence in a machine\nrequiring strict rules or instructions is a much harder task. AI methods for image recognition involve designing\nalgorithm archite",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.031054405392392875
+          }
+        ],
+        "context": "[1e79ffb9ce5fb6e5324bb2de] [0f72cb429f68f64840f703ce] | data\\corpus\\introduction_to_computer_science.pdf | page 31\nnvolve analyzing big data, or very large datasets that are not easily processed using spreadsheets. These datasets often involve high-volume measurements of user interactions on the Internet at a very fine grain, such as tracking a customer’s web browser history across an online storefront. Data scientists can then analyze browser patterns using machine learning methods in order to recommend related products, target advertisements to specific customers over social media, and reengage customers over email or other means. Machine learning (ML) is",
+        "context_ids": [
+          "1e79ffb9ce5fb6e5324bb2de",
+          "0f72cb429f68f64840f703ce"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "differences between machine learning and hand-crafted rules",
+        "filter": null,
+        "results": [
+          {
+            "id": "0f72cb429f68f64840f703ce",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 31,
+            "text": "wser history across\nan online storefront. Data scientists can then analyze browser patterns using machine learning methods in\norder to recommend related products, target advertisements to specific customers over social media, and\nreengage customers over email or other means. Machine learning (ML) is a subset of artificial intelligence that\nrelies on algorithms and data to make it possible for artificial intelligence to learn, actually mimicking the way\nhumans learn. For example, ML is used to id",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.032266458495966696
+          },
+          {
+            "id": "c3c9d54ceaa6b6ff2a680f1d",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 35,
+            "text": " intelligence and machine learning have applications that directly influence human\ndecision-making, ranging from advertisement targeting to language translation to self-driving cars. Effective\ncomputational solutions to research or business problems require combining specific knowledge with\ncomputer science concepts from a combination of areas. For example, the computational science application\nof weather prediction combines knowledge about various subfields of computer science (algorithms,\ndist",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03177805800756621
+          },
+          {
+            "id": "ee8e43083b1f5c106015e673",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 36,
+            "text": "cult for programmers to solve using traditional\nprogramming methods. Imagine having to define very precise rules or instructions that could identify an\nobject in an image regardless of its position, size, lighting conditions, or perspective. As humans, we have an\nintuitive sense of the qualities of an object. However, representing this human intelligence in a machine\nrequiring strict rules or instructions is a much harder task. AI methods for image recognition involve designing\nalgorithm archite",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.031754032258064516
+          }
+        ],
+        "context": "[1e79ffb9ce5fb6e5324bb2de] [0f72cb429f68f64840f703ce] | data\\corpus\\introduction_to_computer_science.pdf | page 31\nnvolve analyzing big data, or very large datasets that are not easily processed using spreadsheets. These datasets often involve high-volume measurements of user interactions on the Internet at a very fine grain, such as tracking a customer’s web browser history across an online storefront. Data scientists can then analyze browser patterns using machine learning methods in order to recommend related products, target advertisements to specific customers over social media, and reengage customers over email or other means. Machine learning (ML) is",
+        "context_ids": [
+          "1e79ffb9ce5fb6e5324bb2de",
+          "0f72cb429f68f64840f703ce"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "question": "How does the book characterize computational thinking?",
+    "retriever": "hybrid",
+    "model": "openai/gpt-4o-mini",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 800,
+    "search_calls": 1,
+    "elapsed_seconds": 2.6093517999997857,
+    "status": "answered",
+    "answer": "Computational thinking is characterized as the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms. It encompasses a collection of methods and approaches for resolving problems, as articulated by Jeannette Wing, who emphasizes the mental acts needed to compute a solution to a problem, whether through human actions or machine. [8438182b96034ea79a7bfa81]",
+    "citations": [
+      "8438182b96034ea79a7bfa81"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "How does the book characterize computational thinking?",
+        "filter": null,
+        "results": [
+          {
+            "id": "8438182b96034ea79a7bfa81",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 51,
+            "text": "2.1 • Computational Thinking 41\n\n76CompThinking) from the BBC.\n\nVision\n\nTo further qualify computational thinking, Al Aho of the Columbia University Computer Science Department\ndescribes computational thinking as “the thought processes involved in formulating problems so their\nsolutions can be represented as computational steps and algorithms.” Jeannette Wing, also of Columbia\nUniversity, brought the idea of computational thinking to prominence in a paper she wrote in 2006 while at\nCarnegie Mell",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03252247488101534
+          },
+          {
+            "id": "f1ae4268e28068809e894057",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 50,
+            "text": "ne computational thinking\n• Discuss computational thinking examples\n\nThis chapter presents key aspects of computational thinking, including logical thinking, assessment,\ndecomposition, pattern recognition, abstraction, generalization, componentization, and automation. These\nelements guide how computer scientists approach problems and create well-designed solution building blocks\nat both the business and technical levels. Computational thinking often involves a bottom-up approach,\nfocusing on com",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.032266458495966696
+          },
+          {
+            "id": "f0525a494f8a3c2bc952ca54",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 53,
+            "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.030158730158730156
+          }
+        ],
+        "context": "[8438182b96034ea79a7bfa81] [2ac24cbd1a06683e9c5a1937] | data\\corpus\\introduction_to_computer_science.pdf | page 51\n thinking as “the thought processes involved in formulating problems so their solutions can be represented as computational steps and algorithms.” Jeannette Wing, also of Columbia University, brought the idea of computational thinking to prominence in a paper she wrote in 2006 while at Carnegie Mellon University. She believes that computational thinking details the mental acts needed to compute a solution to a problem either by human actions or machine. Computational thinking encompasses a collection of methods and approaches for resolving (and",
+        "context_ids": [
+          "8438182b96034ea79a7bfa81",
+          "2ac24cbd1a06683e9c5a1937"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "question": "What is decomposition in computational thinking?",
+    "retriever": "hybrid",
+    "model": "openai/gpt-4o-mini",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 800,
+    "search_calls": 1,
+    "elapsed_seconds": 2.9574802000006457,
+    "status": "answered",
+    "answer": "Decomposition is the process of systematically breaking down a complex problem or system into smaller, more manageable parts or subproblems. By breaking down complexity into simpler elements, decomposition promotes a more organized approach to problem-solving. [f0525a494f8a3c2bc952ca54]",
+    "citations": [
+      "f0525a494f8a3c2bc952ca54"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "What is decomposition in computational thinking?",
+        "filter": null,
+        "results": [
+          {
+            "id": "f0525a494f8a3c2bc952ca54",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 53,
+            "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "8438182b96034ea79a7bfa81",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 51,
+            "text": "2.1 • Computational Thinking 41\n\n76CompThinking) from the BBC.\n\nVision\n\nTo further qualify computational thinking, Al Aho of the Columbia University Computer Science Department\ndescribes computational thinking as “the thought processes involved in formulating problems so their\nsolutions can be represented as computational steps and algorithms.” Jeannette Wing, also of Columbia\nUniversity, brought the idea of computational thinking to prominence in a paper she wrote in 2006 while at\nCarnegie Mell",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03149801587301587
+          },
+          {
+            "id": "f1ae4268e28068809e894057",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 50,
+            "text": "ne computational thinking\n• Discuss computational thinking examples\n\nThis chapter presents key aspects of computational thinking, including logical thinking, assessment,\ndecomposition, pattern recognition, abstraction, generalization, componentization, and automation. These\nelements guide how computer scientists approach problems and create well-designed solution building blocks\nat both the business and technical levels. Computational thinking often involves a bottom-up approach,\nfocusing on com",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03128054740957967
+          }
+        ],
+        "context": "[f0525a494f8a3c2bc952ca54] [b64bf630e447cada483025d9] | data\\corpus\\introduction_to_computer_science.pdf | page 53\ne process of systematically breaking down a complex problem or system into smaller, more manageable parts or subproblems. By breaking down complexity into simpler elements, decomposition promotes a more organized approach to problem-solving. • Logical thinking and pattern recognition is a computational thinking technique that involves the process of identifying similarities among and within problems. This computational thinking technique emphasizes the ability to recognize recurring structures, relationships, or sequences in various problem-sol",
+        "context_ids": [
+          "f0525a494f8a3c2bc952ca54",
+          "b64bf630e447cada483025d9"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "question": "What does decomposition help accomplish?",
+    "retriever": "hybrid",
+    "model": "openai/gpt-4o-mini",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 800,
+    "search_calls": 1,
+    "elapsed_seconds": 2.5149180999997043,
+    "status": "answered",
+    "answer": "Decomposition helps in solving a complex problem by breaking it up into smaller, more manageable tasks. It enables the consideration of various components essential for solving a seemingly complex task, allowing it to be redefined into a more manageable problem. [beb40851f07e8b7c95acfeb3]",
+    "citations": [
+      "beb40851f07e8b7c95acfeb3"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "What does decomposition help accomplish?",
+        "filter": null,
+        "results": [
+          {
+            "id": "beb40851f07e8b7c95acfeb3",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 54,
+            "text": "44 2 • Computational Thinking and Design Reusability\n\nyou can contribute to the development and refinement of strategies that effectively improve road safety.\n\nDecomposition\n\nDecomposition involves solving a complex problem by breaking it up into smaller, more manageable tasks.\nDecomposition enables the consideration of various components essential for solving a seemingly complex\ntask, allowing it to be redefined into a more manageable problem. In the case of the jam sandwich example,\ndecomposit",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "f0525a494f8a3c2bc952ca54",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 53,
+            "text": "2.1 • Computational Thinking 43\n\ntechniques (cornerstones) to computational thinking, as illustrated in Figure 2.4:\n\n• Decomposition is a fundamental concept in computational thinking, representing the process of\nsystematically breaking down a complex problem or system into smaller, more manageable parts or\nsubproblems. By breaking down complexity into simpler elements, decomposition promotes a more\norganized approach to problem-solving.\n• Logical thinking and pattern recognition is a computatio",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03200204813108039
+          },
+          {
+            "id": "a69e34a4dad80d5d128a8e39",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 54,
+            "text": "n the case of the jam sandwich example,\ndecomposition involves identifying all the required ingredients and the steps the robot must take to\nsuccessfully create a jam sandwich.\nLogical Thinking and Pattern Recognition\n\nPattern recognition makes it possible to group all the different features considered in decomposition into\ncategories. In the jam sandwich example, pattern recognition leads to grouping the various things identified\nvia decomposition into categories, in this case, ingredients, equ",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.030834914611005692
+          }
+        ],
+        "context": "[beb40851f07e8b7c95acfeb3] [a69e34a4dad80d5d128a8e39] | data\\corpus\\introduction_to_computer_science.pdf | page 54\nlving a complex problem by breaking it up into smaller, more manageable tasks. Decomposition enables the consideration of various components essential for solving a seemingly complex task, allowing it to be redefined into a more manageable problem. In the case of the jam sandwich example, decomposition involves identifying all the required ingredients and the steps the robot must take to successfully create a jam sandwich. Logical Thinking and Pattern Recognition Pattern recognition makes it possible to group all the different features consider",
+        "context_ids": [
+          "beb40851f07e8b7c95acfeb3",
+          "a69e34a4dad80d5d128a8e39"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "question": "What visual representation can express an algorithm's steps?",
+    "retriever": "hybrid",
+    "model": "openai/gpt-4o-mini",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 800,
+    "search_calls": 3,
+    "elapsed_seconds": 4.1930486999990535,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "What visual representation can express an algorithm's steps?",
+        "filter": null,
+        "results": [
+          {
+            "id": "27a6e205c85a0f066955d079",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 56,
+            "text": "46 2 • Computational Thinking and Design Reusability\n\nFigure 2.6 When using GenAI, a user interacts with the interface while the application processes the prompt with layers of\nabstraction on the back end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\nAlgorithm\n\nAn algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem.\nAlgorithms make it possible to describe a solution to a problem by writing down the instru",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03125763125763126
+          },
+          {
+            "id": "8fc30d2834ee2909e30c2fb6",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 52,
+            "text": "42 2 • Computational Thinking and Design Reusability\n\nis called decomposition. This approach helps analyze and solve problems more effectively.\n• Pattern recognition (logically organizing and analyzing data): Computational thinking emphasizes the\nlogical organization and analysis of data. This includes the ability to structure information in a way that\nfacilitates effective problem-solving.\n• Representing data through abstractions: An abstraction is a simplified representation of complex systems",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.028381642512077296
+          },
+          {
+            "id": "6126d0da2490f4fcdb5d170e",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 38,
+            "text": "represent these patterns with millions or billions of numbers. Mathematical optimization methods\nare used to choose the numeric values that best encode correlations across the sample images. However,\ncurrent approaches lack a deeper, conceptual representation of objects. One criticism of very large neural\nnetworks is that there are often more numeric values than there are sample images—the network can\neffectively memorize the details of a million sample images by encoding them in a billion numbe",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.027526395173453996
+          }
+        ],
+        "context": "[27a6e205c85a0f066955d079] [444e0e832f61bfed2172438f] | data\\corpus\\introduction_to_computer_science.pdf | page 56\nk end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license) Algorithm An algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem. Algorithms make it possible to describe a solution to a problem by writing down the instructions that are required to solve the problem. Computer programs typically execute algorithms to perform certain tasks. In the jam sandwich example, the algorithm technique is about writing instructions that the robot can follow to make the jam sandw",
+        "context_ids": [
+          "27a6e205c85a0f066955d079",
+          "444e0e832f61bfed2172438f"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "visual representation of algorithms",
+        "filter": null,
+        "results": [
+          {
+            "id": "e7cf43a58cce25fbb250f179",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 56,
+            "text": "ne of the logic of algorithms using a\ncombination of language and high-level programming concepts is called pseudocode. Each step is shown in a\nclearly ordered, written structure. A flowchart clearly shows the flow and direction of decisions in a visual way\nusing a diagram. Either way is fine, and it is a matter of personal preference. Basic templates for the flowchart\nand pseudocode are in Figure 2.7.\n\nFigure 2.7 Pseudocode lists each step, while a flowchart visually outlines the process of dec",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.030303030303030304
+          },
+          {
+            "id": "8697ec2d32bc5d4382fc20b3",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 52,
+            "text": " is a simplified representation of complex systems\nor phenomena. Computational thinking involves representing data through an abstraction, such as a\nsimulation, which uses models as surrogates for real systems.\n• Automation through algorithmic thinking: Using a program or computer application to perform repetitive\ntasks or calculations is considered automation.\n• Identification, analysis, and implementation of solutions: Computational thinking emphasizes\nidentification, analysis, and implementat",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.029418126757516764
+          },
+          {
+            "id": "8fc30d2834ee2909e30c2fb6",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 52,
+            "text": "42 2 • Computational Thinking and Design Reusability\n\nis called decomposition. This approach helps analyze and solve problems more effectively.\n• Pattern recognition (logically organizing and analyzing data): Computational thinking emphasizes the\nlogical organization and analysis of data. This includes the ability to structure information in a way that\nfacilitates effective problem-solving.\n• Representing data through abstractions: An abstraction is a simplified representation of complex systems",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.029418126757516764
+          }
+        ],
+        "context": "[27a6e205c85a0f066955d079] [444e0e832f61bfed2172438f] | data\\corpus\\introduction_to_computer_science.pdf | page 56\nk end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license) Algorithm An algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem. Algorithms make it possible to describe a solution to a problem by writing down the instructions that are required to solve the problem. Computer programs typically execute algorithms to perform certain tasks. In the jam sandwich example, the algorithm technique is about writing instructions that the robot can follow to make the jam sandw",
+        "context_ids": [
+          "27a6e205c85a0f066955d079",
+          "444e0e832f61bfed2172438f"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "visual representation of algorithms steps",
+        "filter": null,
+        "results": [
+          {
+            "id": "27a6e205c85a0f066955d079",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 56,
+            "text": "46 2 • Computational Thinking and Design Reusability\n\nFigure 2.6 When using GenAI, a user interacts with the interface while the application processes the prompt with layers of\nabstraction on the back end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\nAlgorithm\n\nAn algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem.\nAlgorithms make it possible to describe a solution to a problem by writing down the instru",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.030798389007344232
+          },
+          {
+            "id": "e7cf43a58cce25fbb250f179",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 56,
+            "text": "ne of the logic of algorithms using a\ncombination of language and high-level programming concepts is called pseudocode. Each step is shown in a\nclearly ordered, written structure. A flowchart clearly shows the flow and direction of decisions in a visual way\nusing a diagram. Either way is fine, and it is a matter of personal preference. Basic templates for the flowchart\nand pseudocode are in Figure 2.7.\n\nFigure 2.7 Pseudocode lists each step, while a flowchart visually outlines the process of dec",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03021353930031804
+          },
+          {
+            "id": "444e0e832f61bfed2172438f",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 56,
+            "text": "a solution to a problem by writing down the instructions that are\nrequired to solve the problem. Computer programs typically execute algorithms to perform certain tasks. In\nthe jam sandwich example, the algorithm technique is about writing instructions that the robot can follow to\nmake the jam sandwich. As you will learn in Chapter 3 Data Structures and Algorithms, algorithms are most\ncommonly written as either pseudocode or a flowchart. An outline of the logic of algorithms using a\ncombination ",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.029273504273504274
+          }
+        ],
+        "context": "[27a6e205c85a0f066955d079] [444e0e832f61bfed2172438f] | data\\corpus\\introduction_to_computer_science.pdf | page 56\nk end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license) Algorithm An algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem. Algorithms make it possible to describe a solution to a problem by writing down the instructions that are required to solve the problem. Computer programs typically execute algorithms to perform certain tasks. In the jam sandwich example, the algorithm technique is about writing instructions that the robot can follow to make the jam sandw",
+        "context_ids": [
+          "27a6e205c85a0f066955d079",
+          "444e0e832f61bfed2172438f"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "u03",
+    "split": "test",
+    "question": "What is the exact electricity consumption of the computer used by the authors?",
+    "retriever": "hybrid",
+    "model": "openai/gpt-4o-mini",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 800,
+    "search_calls": 2,
+    "elapsed_seconds": 2.8626080000012735,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "What is the exact electricity consumption of the computer used by the authors?",
+        "filter": null,
+        "results": [
+          {
+            "id": "9542dbc1f46bafae62239811",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 27,
+            "text": ", and functioning school computers. Unreliable electricity can also\nplay a significant role in computer and Internet usage. And beyond systemic infrastructure-based differences,\nindividual product or service access can create a divide within communities. For example, if powerful AI-based\nsearch and optimization tools are only accessible through high-priced subscriptions, specific populations can\nbe limited in benefiting from those tools.\n\n5 J. Dreyfuss, “Blacks in Silicon Valley,” 2011. https://",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "8400567dfd3bb55511569b02",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 19,
+            "text": "mplex world of computer science. In this chapter, you’ll\nreview the history of computer science, learn about its use in different fields, and explore how computer\nscience will impact the future of society. Computer science is a powerful tool, and computer scientists have\nused their vast knowledge of technology to create and implement technology that has transformed societies\naround the world.\n\nThis book will also introduce the computational thinking aspects of problem-solving and analytical thin",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.030090497737556562
+          },
+          {
+            "id": "88834d7685efb5f728332ab7",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 25,
+            "text": "nce department, their increasing representation reflects computer scientists’ growing desire to serve not\nonly more engaged students, but also a more engaged public in making sense of the values of computer\ntechnologies.\nThe Capabilities and Limitations of Computer Science\nComputers can be understood as sources, tools, and opportunities for changing social conditions. Many\npeople have used computer science to achieve diverse goals beyond this dominant vision for computer\nscience. For example, co",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.02904040404040404
+          }
+        ],
+        "context": "[0e36ad1e2e65dabe07be7fa5] [9542dbc1f46bafae62239811] | data\\corpus\\introduction_to_computer_science.pdf | page 27\nioeconomic statuses, races, ethnicities, and other differentiators. While technological access generally improves over time, communities within the United States and around the world have different levels of access to high-speed Internet, cell towers, and functioning school computers. Unreliable electricity can also play a significant role in computer and Internet usage. And beyond systemic infrastructure-based differences, individual product or service access can create a divide within communities. For example, if powerful AI-based search and ",
+        "context_ids": [
+          "0e36ad1e2e65dabe07be7fa5",
+          "9542dbc1f46bafae62239811"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "electricity consumption of the computer used by the authors",
+        "filter": null,
+        "results": [
+          {
+            "id": "9542dbc1f46bafae62239811",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 27,
+            "text": ", and functioning school computers. Unreliable electricity can also\nplay a significant role in computer and Internet usage. And beyond systemic infrastructure-based differences,\nindividual product or service access can create a divide within communities. For example, if powerful AI-based\nsearch and optimization tools are only accessible through high-priced subscriptions, specific populations can\nbe limited in benefiting from those tools.\n\n5 J. Dreyfuss, “Blacks in Silicon Valley,” 2011. https://",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "8400567dfd3bb55511569b02",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 19,
+            "text": "mplex world of computer science. In this chapter, you’ll\nreview the history of computer science, learn about its use in different fields, and explore how computer\nscience will impact the future of society. Computer science is a powerful tool, and computer scientists have\nused their vast knowledge of technology to create and implement technology that has transformed societies\naround the world.\n\nThis book will also introduce the computational thinking aspects of problem-solving and analytical thin",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03076923076923077
+          },
+          {
+            "id": "0e75b12d521320ecc371f7a6",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 32,
+            "text": "r conditioning\nand power demands so that they efficiently serve the people living, working, and playing within them.\n\nAlthough computer science has been used to support scientific discovery, the theory of knowledge of\ncomputer science has historically been considered quite different from that of the natural sciences, such as\nbiology, physics, and chemistry. Computer science does not study natural objects, so to most, it would not be\nconsidered a natural science but rather an applied science. Unl",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.029437229437229435
+          }
+        ],
+        "context": "[0e36ad1e2e65dabe07be7fa5] [9542dbc1f46bafae62239811] | data\\corpus\\introduction_to_computer_science.pdf | page 27\nioeconomic statuses, races, ethnicities, and other differentiators. While technological access generally improves over time, communities within the United States and around the world have different levels of access to high-speed Internet, cell towers, and functioning school computers. Unreliable electricity can also play a significant role in computer and Internet usage. And beyond systemic infrastructure-based differences, individual product or service access can create a divide within communities. For example, if powerful AI-based search and ",
+        "context_ids": [
+          "0e36ad1e2e65dabe07be7fa5",
+          "9542dbc1f46bafae62239811"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "question": "What is the personal email address of the first computer programmer?",
+    "retriever": "hybrid",
+    "model": "openai/gpt-4o-mini",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 800,
+    "search_calls": 4,
+    "elapsed_seconds": 5.7363046999998915,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "What is the personal email address of the first computer programmer?",
+        "filter": null,
+        "results": [
+          {
+            "id": "a6e5def8298f801b2c46a373",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 21,
+            "text": "he world’s first computer programmer.\n\nThe next major development in computing occurred in the late 1800s when Herman Hollerith, an employee of\nthe U.S. Census Office, developed a machine that could punch cards and count them. In 1890, Hollerith’s\ninvention was used to tabulate and prepare statistics for the U.S. census.\n\nBy the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and\nrelated machines became more commonplace, setting the stage for the inv",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "7a6ea7550015d244b765d285",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 27,
+            "text": "1.1 • Computer Science 17\n\nIn one chapter of BlackSoftware, Charlton McIlwain shares stories from “The Vanguard” of Black men and\nwomen who made a mark on computer science in its early years from the 1950s through the 1990s through\nthe rise of personal computing and the Internet, but whose histories have largely been erased by the\ndominant Silicon Valley narratives. Their accomplishments include leading computer stores and developing\nearly Internet social media platforms, news, and blog websites",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.029236022193768675
+          },
+          {
+            "id": "fd592aae47e60aaf9834d401",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 22,
+            "text": "d University’s computer science department, Forsythe defined computer science as “the theory of\nprogramming, numerical analysis, data processing, and the design of computer systems.” He also argued that\ncomputer science was distinguished from other disciplines by the emphasis on algorithms, which are essential\nfor effective computer programming.3\n\nComputer science is not only about the study of how computers work, but also everything surrounding\ncomputers, including the people who design compute",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.025645240835114255
+          }
+        ],
+        "context": "[a6e5def8298f801b2c46a373] [9027c0a9d1779009b0350f5a] | data\\corpus\\introduction_to_computer_science.pdf | page 21\npunch cards and count them. In 1890, Hollerith’s invention was used to tabulate and prepare statistics for the U.S. census. By the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and related machines became more commonplace, setting the stage for the invention of the computer. In the 1940s, multiple computers became available, including IBM’s Harvard Mark 1. These were the forerunners to the advent of the digital computer in the 1950s, which changed everything and evolved into the computers and rela",
+        "context_ids": [
+          "a6e5def8298f801b2c46a373",
+          "9027c0a9d1779009b0350f5a"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "first computer programmer personal email address",
+        "filter": null,
+        "results": [
+          {
+            "id": "a6e5def8298f801b2c46a373",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 21,
+            "text": "he world’s first computer programmer.\n\nThe next major development in computing occurred in the late 1800s when Herman Hollerith, an employee of\nthe U.S. Census Office, developed a machine that could punch cards and count them. In 1890, Hollerith’s\ninvention was used to tabulate and prepare statistics for the U.S. census.\n\nBy the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and\nrelated machines became more commonplace, setting the stage for the inv",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "b46f3abf3d881963265336d6",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 53,
+            "text": "under CC BY NC-SA 4.0 license)\n\nIn addition to the four techniques, computational thinking involves essential steps such as testing and\ndebugging. Testing is crucial for uncovering errors within the step-by-step instructions or algorithms\nemployed to tackle a problem. On the other hand, debugging entails identifying and rectifying issues within\nthe code.\n\nA programmer is someone who writes instructions for a computer to follow. A typical example is that of a\nprogrammer who gives instructions to ",
+            "metadata": {
+              "chapter": "chapter_2",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.016129032258064516
+          },
+          {
+            "id": "f75064c2197eecb54a716a8f",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 26,
+            "text": "16 1 • Introduction to Computer Science\n\nsoftware engineers, designed their computer science curricula to teach the concepts that early computer\ncompanies such as IBM desperately needed. These courses had an emphasis on efficiency, performance, and\nscalability, because a university computer science education was only intended to produce software engineers.\nWe live with the consequences of this design even today: the structure of this textbook inherits the borders\nbetween concepts originally imag",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.016129032258064516
+          }
+        ],
+        "context": "[a6e5def8298f801b2c46a373] [9027c0a9d1779009b0350f5a] | data\\corpus\\introduction_to_computer_science.pdf | page 21\npunch cards and count them. In 1890, Hollerith’s invention was used to tabulate and prepare statistics for the U.S. census. By the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and related machines became more commonplace, setting the stage for the invention of the computer. In the 1940s, multiple computers became available, including IBM’s Harvard Mark 1. These were the forerunners to the advent of the digital computer in the 1950s, which changed everything and evolved into the computers and rela",
+        "context_ids": [
+          "a6e5def8298f801b2c46a373",
+          "9027c0a9d1779009b0350f5a"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "first computer programmer email address",
+        "filter": null,
+        "results": [
+          {
+            "id": "a6e5def8298f801b2c46a373",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 21,
+            "text": "he world’s first computer programmer.\n\nThe next major development in computing occurred in the late 1800s when Herman Hollerith, an employee of\nthe U.S. Census Office, developed a machine that could punch cards and count them. In 1890, Hollerith’s\ninvention was used to tabulate and prepare statistics for the U.S. census.\n\nBy the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and\nrelated machines became more commonplace, setting the stage for the inv",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "fd592aae47e60aaf9834d401",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 22,
+            "text": "d University’s computer science department, Forsythe defined computer science as “the theory of\nprogramming, numerical analysis, data processing, and the design of computer systems.” He also argued that\ncomputer science was distinguished from other disciplines by the emphasis on algorithms, which are essential\nfor effective computer programming.3\n\nComputer science is not only about the study of how computers work, but also everything surrounding\ncomputers, including the people who design compute",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.02667140825035562
+          },
+          {
+            "id": "36c97e25d46749b8e65c9078",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 20,
+            "text": "y the end of this section, you will be able to:\n• Discuss the history that led to the creation of computer science as a field\n• Define computer science\n• Assess what computer science can do, as well as what it should not do\n\nThe field of computer science (CS) is the study of computing, which includes all phenomena related to\ncomputers, such as the Internet. With foundations in engineering and mathematics, computer science focuses\non studying algorithms. An algorithm is a sequence of precise inst",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.025645240835114255
+          }
+        ],
+        "context": "[a6e5def8298f801b2c46a373] [9027c0a9d1779009b0350f5a] | data\\corpus\\introduction_to_computer_science.pdf | page 21\npunch cards and count them. In 1890, Hollerith’s invention was used to tabulate and prepare statistics for the U.S. census. By the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and related machines became more commonplace, setting the stage for the invention of the computer. In the 1940s, multiple computers became available, including IBM’s Harvard Mark 1. These were the forerunners to the advent of the digital computer in the 1950s, which changed everything and evolved into the computers and rela",
+        "context_ids": [
+          "a6e5def8298f801b2c46a373",
+          "9027c0a9d1779009b0350f5a"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "first computer programmer biography",
+        "filter": null,
+        "results": [
+          {
+            "id": "a6e5def8298f801b2c46a373",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 21,
+            "text": "he world’s first computer programmer.\n\nThe next major development in computing occurred in the late 1800s when Herman Hollerith, an employee of\nthe U.S. Census Office, developed a machine that could punch cards and count them. In 1890, Hollerith’s\ninvention was used to tabulate and prepare statistics for the U.S. census.\n\nBy the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and\nrelated machines became more commonplace, setting the stage for the inv",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.03278688524590164
+          },
+          {
+            "id": "fd592aae47e60aaf9834d401",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 22,
+            "text": "d University’s computer science department, Forsythe defined computer science as “the theory of\nprogramming, numerical analysis, data processing, and the design of computer systems.” He also argued that\ncomputer science was distinguished from other disciplines by the emphasis on algorithms, which are essential\nfor effective computer programming.3\n\nComputer science is not only about the study of how computers work, but also everything surrounding\ncomputers, including the people who design compute",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.029857397504456328
+          },
+          {
+            "id": "c5de90b34c9f4b861e0b9aa7",
+            "source_id": "openstax-intro-cs",
+            "source": "data\\corpus\\introduction_to_computer_science.pdf",
+            "page": 19,
+            "text": "1\nIntroduction to Computer Science\n\nFigure 1.1 Computing is everywhere, affecting everyone, for better and for worse. (credit: modification of \"Whereas design is\nexpansive, engineering is narrowing\" by Jessie Huynh/Critically Conscious Computing, CC0)\n\nChapter Outline\n1.1 Computer Science\n1.2 Computer Science across the Disciplines\n1.3 Computer Science and the Future of Society\n\nIntroduction\nThis textbook will introduce you to the exciting and complex world of computer science. In this chapter, ",
+            "metadata": {
+              "chapter": "chapter_1",
+              "category": "computer_science",
+              "language": "en"
+            },
+            "score": 0.02782608695652174
+          }
+        ],
+        "context": "[a6e5def8298f801b2c46a373] [9027c0a9d1779009b0350f5a] | data\\corpus\\introduction_to_computer_science.pdf | page 21\npunch cards and count them. In 1890, Hollerith’s invention was used to tabulate and prepare statistics for the U.S. census. By the end of the 1800s and leading into the early 1900s, calculators, adding machines, typewriters, and related machines became more commonplace, setting the stage for the invention of the computer. In the 1940s, multiple computers became available, including IBM’s Harvard Mark 1. These were the forerunners to the advent of the digital computer in the 1950s, which changed everything and evolved into the computers and rela",
+        "context_ids": [
+          "a6e5def8298f801b2c46a373",
+          "9027c0a9d1779009b0350f5a"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  }
+]

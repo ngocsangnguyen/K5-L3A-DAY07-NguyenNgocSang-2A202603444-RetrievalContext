@@ -1,0 +1,19 @@
+[
+  {"query_id":"q01","answer_grade":2,"citation_support":[true],"note":"Defines computer science as study of phenomena surrounding computers; cited passage supports this."},
+  {"query_id":"q02","answer_grade":2,"citation_support":[true],"note":"Gives the precise-instructions definition; the cited chunk contains it."},
+  {"query_id":"q03","answer_grade":2,"citation_support":[true],"note":"Explains repeated narrowing to the lower or upper half; cited passage supports the steps."},
+  {"query_id":"q04","answer_grade":2,"citation_support":[true],"note":"Names John Napier and 1614; cited passage contains both facts."},
+  {"query_id":"q05","answer_grade":2,"citation_support":[true],"note":"States the goal of preventing human calculation errors; cited passage identifies the Difference Engine and this purpose."},
+  {"query_id":"q06","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question."},
+  {"query_id":"q07","answer_grade":2,"citation_support":[true],"note":"Names Bellman and 1953; cited passage supports the answer."},
+  {"query_id":"q08","answer_grade":2,"citation_support":[true],"note":"Names George E. Forsythe and 1961; cited passage supports the answer."},
+  {"query_id":"q09","answer_grade":2,"citation_support":[true],"note":"Lists processor, memory, network, and storage; cited passage contains the list."},
+  {"query_id":"q10","answer_grade":2,"citation_support":[true],"note":"Identifies vacuum tubes; cited passage contrasts them with silicon."},
+  {"query_id":"q11","answer_grade":2,"citation_support":[true],"note":"Explains that Turing-complete computers can run any algorithm; cited passage supports this."},
+  {"query_id":"q12","answer_grade":1,"citation_support":[true],"note":"Gives a relevant, supported LOGO use but omits the expected turtle-graphics distinction."},
+  {"query_id":"q13","answer_grade":2,"citation_support":[true],"note":"Lists careers beyond software engineering; cited passage supports the examples."},
+  {"query_id":"q14","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question."},
+  {"query_id":"q15","answer_grade":2,"citation_support":[true],"note":"States that spreadsheet risk grows with data and participants; cited passage says so."},
+  {"query_id":"u01","citation_support":[],"abstention_correct":true,"note":"Full-PDF text scan found no Python 3.15 or release-date fact."},
+  {"query_id":"u02","citation_support":[],"abstention_correct":true,"note":"Full-PDF scan found no Vietnam market-share fact; Windows 11 appears only in an unrelated software list."}
+]

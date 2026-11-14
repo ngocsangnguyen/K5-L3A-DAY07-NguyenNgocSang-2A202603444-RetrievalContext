@@ -1,0 +1,19 @@
+[
+  {"query_id":"q01","answer_grade":2,"citation_support":[true],"note":"The cited passage supports the definition and examples in the answer."},
+  {"query_id":"q02","answer_grade":2,"citation_support":[true],"note":"Gives the precise-instructions definition; the cited chunk contains it."},
+  {"query_id":"q03","answer_grade":2,"citation_support":[true],"note":"Explains binary-search interval halving and the lower/upper choice; cited passage supports it."},
+  {"query_id":"q04","answer_grade":0,"citation_support":[false],"note":"The answer names Napier correctly, but its cited chunk is an unrelated recipe/abacus passage and does not support the claim."},
+  {"query_id":"q05","answer_grade":0,"citation_support":[false],"note":"The answer states the Difference Engine's purpose, but its citation is about Napier/logarithms and does not support that claim."},
+  {"query_id":"q06","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question after reaching the search limit."},
+  {"query_id":"q07","answer_grade":2,"citation_support":[true],"note":"Names Bellman and 1953; cited passage supports the answer."},
+  {"query_id":"q08","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question."},
+  {"query_id":"q09","answer_grade":0,"citation_support":[false],"note":"The four-component list is correct, but the cited chunk does not contain or support the list."},
+  {"query_id":"q10","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question."},
+  {"query_id":"q11","answer_grade":2,"citation_support":[true],"note":"Explains that Turing-complete computers can run any algorithm; cited passage supports this."},
+  {"query_id":"q12","answer_grade":0,"citation_support":[false],"note":"The answer names turtle graphics, but the cited chunk supports only LOGO's educational communication purpose, not turtle graphics."},
+  {"query_id":"q13","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question."},
+  {"query_id":"q14","answer_grade":2,"citation_support":[true],"note":"Names Mark Dean; the cited passage identifies his IBM work on the Industry Standard Architecture."},
+  {"query_id":"q15","answer_grade":2,"citation_support":[true],"note":"States that spreadsheet risk grows with data and participants; cited passage says so."},
+  {"query_id":"u01","citation_support":[],"abstention_correct":true,"note":"Full-PDF text scan found no Python 3.15 or release-date fact."},
+  {"query_id":"u02","citation_support":[],"abstention_correct":true,"note":"Full-PDF scan found no Vietnam market-share fact; Windows 11 appears only in an unrelated software list."}
+]

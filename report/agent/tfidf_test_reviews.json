@@ -1,0 +1,9 @@
+[
+  {"query_id":"q16","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question."},
+  {"query_id":"q17","answer_grade":1,"citation_support":[true],"note":"The listed computational-thinking elements and their role are supported, but the answer omits the book's characterization as thought processes for formulating problems."},
+  {"query_id":"q18","answer_grade":2,"citation_support":[true],"note":"Defines decomposition as breaking a complex problem into smaller parts; cited passage supports it."},
+  {"query_id":"q19","answer_grade":2,"citation_support":[true],"note":"Explains that decomposition breaks complex problems into manageable tasks; cited passage supports it."},
+  {"query_id":"q20","answer_grade":0,"citation_support":[],"note":"Abstained on an answerable question."},
+  {"query_id":"u03","citation_support":[],"abstention_correct":true,"note":"Full-PDF scan found no author-computer electricity figure or matching fact."},
+  {"query_id":"u04","citation_support":[],"abstention_correct":true,"note":"The PDF identifies Ada Lovelace but contains no personal email address for her."}
+]

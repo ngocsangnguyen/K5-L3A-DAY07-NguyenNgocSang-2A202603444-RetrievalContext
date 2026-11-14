@@ -77,34 +77,21 @@ Citation support là review ngữ nghĩa của passage, không phải chỉ ki�
 - **Trace/review dev:** [Hybrid trước expansion](../agent/hybrid_dev_before.json), [review trước](../agent/hybrid_dev_before_reviews.json), [metrics trước](../agent/hybrid_dev_before_metrics.json), [Hybrid sau expansion](../agent/hybrid_dev_after.json), [review sau](../agent/hybrid_dev_after_reviews.json), [metrics sau](../agent/hybrid_dev_after_metrics.json), [agent_cases.json](../../benchmark/agent_cases.json).
 - **Hạn chế:** evidence review là một lượt chấm, không có inter-rater agreement. Context expansion chưa cải thiện chất lượng end-to-end trong trace dev đã lưu; đặc biệt có citation không hỗ trợ answer ở q04/q05/q09/q12.
 
-## Thử thách nâng cao
+## Thử thách nâng cao (nếu thực hiện)
 
-Tài liệu gốc dài hơn 100 trang (939 trang) và có giấy phép CC BY-NC-SA 4.0, nhưng artifacts hiện có chỉ chứng minh index text trên 34 giá trị trang nguồn (19–60). Không có bằng chứng index toàn bộ tài liệu, trích xuất/kiểm chứng bảng, ảnh hoặc biểu đồ; cũng không có benchmark nhóm nâng cao, test traces 30 câu, nhãn từng câu hoặc kết quả đạt ngưỡng 90%. Vì vậy **thử thách nâng cao chưa hoàn thành; không tuyên bố đạt bonus**.
+- Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:
+- Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:
+- Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev:
 
-| Nhóm test | Kết quả hiện có | Tỷ lệ | Giới hạn |
+| Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
 |---|---|---|---|
-| Bảng | 0 câu có nhãn | — | Không có bộ câu hỏi/trace riêng |
-| Ảnh, sơ đồ | 0 câu có nhãn | — | Không có pipeline visual/OCR được xác minh |
-| Biểu đồ | 0 câu có nhãn | — | Không có bộ câu hỏi/trace riêng |
-| Multi-hop | 0 câu có nhãn | — | Không có nhãn evidence nhiều bước |
-| Text nâng cao | 0 câu thuộc benchmark nâng cao | — | Test text hiện tại chỉ là benchmark cơ bản |
-| Câu ngoài phạm vi nguồn (test cơ bản) | Agent abstain đúng 2/2 ở cả hai cấu hình | 100% | Không phải benchmark nâng cao riêng |
-| **Toàn bộ thử thách nâng cao** | **Không chạy** | **—** | **Không có benchmark 30 câu; không thể kết luận đạt ngưỡng 90%** |
+| Bảng | | | |
+| Ảnh, sơ đồ | | | |
+| Biểu đồ | | | |
+| Multi-hop | | | |
+| Text | | | |
+| Thiếu bằng chứng | | | |
+| **Toàn bộ** | | | |
 
-- **Lệnh tái lập retrieval dev** (chạy từ root Day 7; đặt `DAY6_ROOT` tới repo Day 6 trước):
-
-  ```powershell
-  python starter/evaluate_retrievers.py --split dev --strategy tfidf --chunk-strategy A --budget 800
-  python starter/evaluate_retrievers.py --split dev --strategy dense --chunk-strategy A --budget 800
-  python starter/evaluate_retrievers.py --split dev --strategy hybrid --chunk-strategy A --budget 800
-  python starter/evaluate_retrievers.py --split test --strategy tfidf --chunk-strategy A --budget 800
-  python starter/evaluate_retrievers.py --split test --strategy dense --chunk-strategy A --budget 800
-  python starter/evaluate_retrievers.py --split test --strategy hybrid --chunk-strategy A --budget 800
-  python starter/evaluate_agent.py --split dev --retriever hybrid --max-searches 4 --budget 800
-  python starter/evaluate_agent.py --split test --retriever tfidf --max-searches 4 --budget 800
-  python starter/evaluate_agent.py --split test --retriever hybrid --max-searches 4 --budget 800
-  ```
-
-  Evaluator ghi đè file cùng tên khi chạy lại; giữ bản sao từng budget với hậu tố `_800`, `_1600`, `_3200`. Demo smoke test: `python starter/demo_agent.py --question "What is an algorithm?" --retriever hybrid`. Không đưa `.env`/API key vào báo cáo hoặc Git.
-- Các đường dẫn lệnh/code: [evaluate_retrievers.py](../../starter/evaluate_retrievers.py), [evaluate_agent.py](../../starter/evaluate_agent.py), [demo_agent.py](../../starter/demo_agent.py), [định dạng benchmark](../../data/README.md).
-- Warning còn lại: Day 6 gọi `get_sentence_embedding_dimension()` và hiện FutureWarning đổi tên API; không làm hỏng lần chạy. Cần cập nhật ở repo Day 6 riêng nếu muốn loại warning.
+- Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:
+- Giới hạn, cách tái lập và đường dẫn benchmark:
